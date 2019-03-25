@@ -1,8 +1,11 @@
 .Carousel
 {
-  padding: 100px;
+  /* padding: 20%; */
+  /* margin-left: 20%; */
+  margin: auto;
+  /* border-right: 25%; */
   /* text-align: center; */
-  width:50%;
+  width:70%;
   height: 100%;
 }
 .Carousel-inner img {
