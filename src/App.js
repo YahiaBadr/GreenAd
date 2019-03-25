@@ -10,8 +10,9 @@ import BodyText from "./Components/BodyText";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import ControlledCarousel from "./Components/ControlledCarousel";
-import SimpleBottomNavigation from "./Components/SimpleBottomNavigation"
-class App extends Component {
+
+
+export default class App extends Component {
   render() {
     function showPage() {
       document.getElementById("loader").style.display = "none";
@@ -37,8 +38,7 @@ class App extends Component {
         <div onLoad={showPage}>
           <div id="loader" />
           <div id="myDiv">
-            {/* <NavBarMob /> */}
-            <SimpleBottomNavigation/>
+            <NavBarMob />
             <ControlledCarousel />
             <BodyText />
             <Clients />
@@ -50,5 +50,3 @@ class App extends Component {
     }
   }
 }
-
-export default App;
