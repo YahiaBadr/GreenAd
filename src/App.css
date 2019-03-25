@@ -1,8 +1,15 @@
 /* div {display: block;} */
-
+nav{
+  background-attachment:crimson ;
+}
+.nav a{
+  color: white ;
+  font-size: 20px ;
+  font: bold !important;
+  }
 .Header{
   z-index: 10;
-  background: green;
+  /* background:crimson; */
   position : fixed;
   top : 0;
   min-width: 100%;

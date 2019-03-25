@@ -32,7 +32,7 @@ export default class Clients extends Component{
         const {anchorEl} = this.state;
         return(
             <div className='Header'>
-                <img className="Logo" src="https://www.colourbox.com/preview/1523002-single-green-leaf-on-white-background-isolated-with-path.jpg"  alt=""/>
+                <img className="Logo" src="https://hmp.me/ciz9"  alt=""/>
               
                <IconButton className={classes.menuButton} onClick={this.handleClick} color="inherit" aria-label="Menu">
                <MenuIcon></MenuIcon>
