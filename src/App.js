@@ -52,6 +52,9 @@ class App extends Component {
               <NavBarMob></NavBarMob>
               <SlideShow></SlideShow>
               <BodyText></BodyText>
+              <Clients></Clients>
+              <CarouselUs></CarouselUs>
+              <ContactUs></ContactUs>
               <Footer></Footer>
             </div>
           </div>
