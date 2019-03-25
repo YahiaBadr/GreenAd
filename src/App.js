@@ -27,17 +27,14 @@ class App extends Component {
           </div>
           <div id="myDiv">
             <NavBar></NavBar>
-          <SlideShow></SlideShow>
-
-          <BodyText></BodyText>
-               
+            <SlideShow></SlideShow>
+            <BodyText></BodyText>
             <Clients></Clients>
-            {/* Carosel */}
+              {/* Carosel */}
             <ContactUs></ContactUs>
             <div id="Footer" className="Footer">
               <br></br>©CopyRights to SYM- All Rights Reserved
             </div>
-
           </div>
          </div>
         
@@ -54,21 +51,7 @@ class App extends Component {
               
               <NavBarMob></NavBarMob>
               <SlideShow></SlideShow>
-              <div className="Body">
-              
-                <p className="text">
-                  first text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                  text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                  text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                  text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                  text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
-                </p>
-              </div>
+              <BodyText></BodyText>
   
               <div id="Footer" className="Footer">
                 <br></br>©CopyRights to SYM- All Rights Reserved

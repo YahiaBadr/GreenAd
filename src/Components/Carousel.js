@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Css/Clients.css';
+import '../Css/Carousel.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default class Carousel extends Component{

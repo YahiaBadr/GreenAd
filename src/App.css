@@ -23,18 +23,14 @@
   background:white;
   width: 70%;
 }
-.headerList li{display: inline-block;margin-right: 1vmin;}
-/* .headerList button
-{
-  color:green;
-  background: none;
-  cursor:unset;
-  border: none;
-  font:bold,Arial,Sans-Serif;
-  font-size: 1.5vmax;
-  outline: none
-} */
-.headerList button:hover{color: red;}
+.headerList li{
+  display: inline-block;
+  margin-right: 1vmin;
+}
+
+.headerList button:hover{
+  color: red;
+}
 .headerBtn {
   color:green;
   background: none;
@@ -74,13 +70,6 @@
 {
   float: left;
   widows: 30%;
-}
-.Body4
-{
-  padding: 100px;
-  /* text-align: center; */
-  width:50%;
-  height: 100%;
 }
 .Footer
 {
