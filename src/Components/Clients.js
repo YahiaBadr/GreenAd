@@ -8,7 +8,7 @@ export default class Clients extends Component{
     {
         
         return(
-            <div className="Body3">
+            <div id = "Clients" className="Clients">
                 <img alt="" src="http://www.egyptfoodsgroup.com/img/logo.png"/>
                 <img alt="" src="https://www.elmotaheda-web.com/images/cinnabon.png"/>
                 <img alt="" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Egyptian_Premier_League_logo.png/200px-Egyptian_Premier_League_logo.png"/>

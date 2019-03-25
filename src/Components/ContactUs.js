@@ -4,7 +4,7 @@ export default class ContactUs extends Component{
 
     render() {
         return (
-          <div className="Contact">
+          <div id = "Contact" className="Contact">
           <p>Contact Us</p>
           <div>
           <label>First Name</label>

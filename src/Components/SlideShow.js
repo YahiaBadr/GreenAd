@@ -37,7 +37,7 @@ export default class Clients extends Component{
   {
       const classes = this.props; 
       return(
-      <div className="Body">
+      <div id = "Home" className="Body">
             <AutoPlaySwipeableViews onChangeIndex={this.handleStepChange} enableMouseEvents>
               {car.map(step => (
                 <img id="swipingImage" key={step.label} className={classes.img} src={step.imgPath} alt={step.label}/>

@@ -10,6 +10,7 @@ export default class CarouselUs extends Component{
     {
         
         return(
+            <div id = "Services">
             <Carousel className="Carousel" autoPlay infiniteLoop emulateTouch>
                 <div>
                     <img alt="" src="http://katameyadowntown.com/wp-content/uploads/2016/09/vodafone-1.png"/>
@@ -24,6 +25,7 @@ export default class CarouselUs extends Component{
                     <p className="legend">Legend 3</p>
                 </div>
             </Carousel>
+            </div>
         )
     }
 }
