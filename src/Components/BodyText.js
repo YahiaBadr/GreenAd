@@ -8,7 +8,7 @@ export default class BodyText extends Component{
     {
         
         return(
-            <div id = "AboutUs" className="Body">
+            <div id = "Services" className="Body">
                 <p className="text">
                 first text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
                 text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>text text<br></br>
