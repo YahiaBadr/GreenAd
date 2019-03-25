@@ -1,0 +1,9 @@
+.Body{
+    top:1%;
+    background: tomato;
+    padding-top: 1vmin;
+    display: block;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
