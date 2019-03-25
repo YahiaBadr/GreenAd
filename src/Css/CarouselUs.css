@@ -1,7 +1,10 @@
-.Body4
+.Carousel
 {
   padding: 100px;
   /* text-align: center; */
   width:50%;
   height: 100%;
+}
+.Carousel-inner img {
+  margin: auto;
 }
