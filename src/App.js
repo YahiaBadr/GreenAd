@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
 import './App.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import React, { Component } from 'react';
+
+//Classes
 import NavBar from './Components/NavBar';
 import NavBarMob from './Components/NavBarMob';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Clients from './Components/Clients';
 import BodyText from './Components/BodyText';
 import SlideShow from './Components/SlideShow';
 import ContactUs from './Components/ContactUs';
 import Footer from './Components/Footer';
-// import { Carousel } from 'react-responsive-carousel';
+import CarouselUs from './Components/CarouselUs';
 
 
 class App extends Component {
@@ -31,7 +33,7 @@ class App extends Component {
             <SlideShow></SlideShow>
             <BodyText></BodyText>
             <Clients></Clients>
-              {/* Carosel */}
+            <CarouselUs></CarouselUs>
             <ContactUs></ContactUs>
             <Footer></Footer>
           </div>
