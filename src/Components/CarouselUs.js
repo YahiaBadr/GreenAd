@@ -10,7 +10,7 @@ export default class CarouselUs extends Component{
     {
         
         return(
-             <Carousel  className="Carousel" autoPlay infiniteLoop emulateTouch>
+            <Carousel className="Carousel" autoPlay infiniteLoop emulateTouch>
                 <div>
                     <img alt="" src="http://katameyadowntown.com/wp-content/uploads/2016/09/vodafone-1.png"/>
                     <p className="legend">Legend 1</p>
