@@ -7,6 +7,7 @@ import Clients from './Components/Clients';
 import BodyText from './Components/BodyText';
 import SlideShow from './Components/SlideShow';
 import ContactUs from './Components/ContactUs';
+import Footer from './Components/Footer';
 // import { Carousel } from 'react-responsive-carousel';
 
 
@@ -32,9 +33,7 @@ class App extends Component {
             <Clients></Clients>
               {/* Carosel */}
             <ContactUs></ContactUs>
-            <div id="Footer" className="Footer">
-              <br></br>©CopyRights to SYM- All Rights Reserved
-            </div>
+            <Footer></Footer>
           </div>
          </div>
         
@@ -48,14 +47,10 @@ class App extends Component {
               
             </div>
             <div id="myDiv">
-              
               <NavBarMob></NavBarMob>
               <SlideShow></SlideShow>
               <BodyText></BodyText>
-  
-              <div id="Footer" className="Footer">
-                <br></br>©CopyRights to SYM- All Rights Reserved
-              </div>
+              <Footer></Footer>
             </div>
           </div>
           
