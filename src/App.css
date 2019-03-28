@@ -1,4 +1,15 @@
 /* div {display: block;} */
+button {
+  color:green;
+  background: none;
+  cursor:unset;
+  border: none;
+  font:bold,Arial,Sans-Serif;
+  font-size: 1.5vmax;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
 nav{
   background-attachment:crimson ;
 }
@@ -14,7 +25,7 @@ nav{
   top : 0;
   min-width: 100%;
   /* max-height: 20v; */
-  max-height: 10%;
+  /* max-height: 10%; */
   overflow: auto;
   margin: 0 auto;
 }
@@ -23,7 +34,7 @@ nav{
   height:100% ;
   max-height: 100vmin;
   /* float: center; */
-}
+ }
 .headerList {
   float: left;
   padding-top:1vh;

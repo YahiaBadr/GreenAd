@@ -1,48 +1,118 @@
 import React, { Component } from "react";
 import "../App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-
+// import PropTypes from "prop-types";
+// import { withStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+// const styles = theme => ({
+//   button: {
+//     margin: theme.spacing.unit
+//   },
+//   input: {
+//     display: "none"
+//   }
+// });
 export default class Clients extends Component {
-  state = {
-    activeStep: 0,
-    anchorEl: null
-  };
-  habda() {
-    document.getElementById("Footer").scrollIntoView({ behavior: "smooth" });
-    this.handleClose();
-  }
-  handleClick = event => {
-    if (this.state.anchorEl === null)
-      this.setState({ anchorEl: event.currentTarget });
-    else {
-      this.habda();
-    }
-  };
-  handleClose = () => {
-    this.setState({ anchorEl: null });
-  };
   render() {
-    const classes = this.props;
-    const { anchorEl } = this.state;
+    function scrollTextHome() {
+      document.getElementById("Home").scrollIntoView({ behavior: "smooth" });
+    }
+    // function scrollTextAboutUs() {
+    //   document.getElementById("AboutUs").scrollIntoView({ behavior: "smooth" });
+    // }
+    function scrollTextServices() {
+      document
+        .getElementById("Services")
+        .scrollIntoView({ behavior: "smooth" });
+    }
+    function scrollTextClients() {
+      document.getElementById("Clients").scrollIntoView({ behavior: "smooth" });
+    }
+    function scrollTextContactUs() {
+      document.getElementById("Contact").scrollIntoView({ behavior: "smooth" });
+    }
+    // const { classes } = this.props;
     return (
       <div className="Header">
-        <img className="Logo" src="https://hmp.me/ciz9" alt="" />
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <img className="Logo" src="https://hmp.me/ciz9" alt="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" />
+          </button>
 
-        <IconButton className={classes.menuButton} onClick={this.handleClick} color="inherit" aria-label="Menu">
-               <MenuIcon></MenuIcon>
-                  <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)}>
-                    <MenuItem onClick={this.handleClick}>Home</MenuItem>
-                    <MenuItem onClick={this.handleClick}>About Us</MenuItem>
-                    <MenuItem onClick={this.handleClick}>Services</MenuItem>
-                    <MenuItem onClick={this.handleClick}>Clients</MenuItem>
-                    <MenuItem onClick={this.handleClick}>Contact Us</MenuItem>
-                  </Menu>
-                </IconButton> 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ml-auto active">
+                <button
+                  // class="nav-link ml-auto"
+                  data-toggle="collapse"
+                  // data-target="#navbarSupportedContent"
+                  data-target=".navbar-collapse.show"
+                  onClick={scrollTextHome}
+                >
+                  Home <span class="sr-only">(current)</span>
+                </button>
+              </li>
+              <li class="nav-item ml-auto">
+                <button
+                  // class="nav-link"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  onClick={scrollTextServices}
+                >
+                  Services
+                </button>
+              </li>
+              <li class="nav-item ml-auto">
+                <button
+                  // class="nav-link"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  onClick={scrollTextClients}
+                >
+                  Clients
+                </button>
+              </li>
+              <li class="nav-item ml-auto">
+                <button
+                  // class="nav-link"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  // onClick={scrollTextAboutUs}
+                >
+                  AboutUS
+                </button>
+              </li>
+              <li class="nav-item ml-auto">
+                <button
+                  // class="nav-link"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  onClick={scrollTextContactUs}
+                >
+                  ContactUS
+                </button>
+              </li>
+              <li class="nav-item ml-auto">
+                <Button
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  onClick={scrollTextContactUs}
+                >
+                  Default
+                </Button>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     );
   }
