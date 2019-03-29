@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import "../Css/Test.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "react-bootstrap/Nav";
 export default class NavBar extends Component {

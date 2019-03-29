@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
+import "../Css/NavBarMob.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import PropTypes from "prop-types";
-// import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 // const styles = theme => ({
 //   button: {
@@ -33,9 +32,16 @@ export default class Clients extends Component {
     }
     // const { classes } = this.props;
     return (
+      //navbar navbar-default navbar-alt
+      //navbar navbar-expand-lg navbar-dark bg-dark
       <div className="Header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <img className="Logo" src="https://hmp.me/ciz9" alt="" />
+        <Button class="Logo"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+          onClick={scrollTextHome}
+        >GreenAd
+        </Button>
           <button
             class="navbar-toggler"
             type="button"
@@ -47,67 +53,56 @@ export default class Clients extends Component {
           >
             <span class="navbar-toggler-icon" />
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item ml-auto active">
-                <button
+                <Button
                   // class="nav-link ml-auto"
                   data-toggle="collapse"
-                  // data-target="#navbarSupportedContent"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextHome}
                 >
                   Home <span class="sr-only">(current)</span>
-                </button>
+                </Button>
               </li>
               <li class="nav-item ml-auto">
-                <button
+                <Button
                   // class="nav-link"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextServices}
                 >
                   Services
-                </button>
+                </Button>
               </li>
               <li class="nav-item ml-auto">
-                <button
+                <Button
                   // class="nav-link"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextClients}
                 >
                   Clients
-                </button>
+                </Button>
               </li>
               <li class="nav-item ml-auto">
-                <button
+                <Button
                   // class="nav-link"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   // onClick={scrollTextAboutUs}
                 >
                   AboutUS
-                </button>
+                </Button>
               </li>
               <li class="nav-item ml-auto">
-                <button
+                <Button
                   // class="nav-link"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextContactUs}
                 >
                   ContactUS
-                </button>
-              </li>
-              <li class="nav-item ml-auto">
-                <Button
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                  onClick={scrollTextContactUs}
-                >
-                  Default
                 </Button>
               </li>
             </ul>
