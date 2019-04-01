@@ -58,6 +58,7 @@ export default class Clients extends Component {
               <li class="nav-item ml-auto active">
                 <Button
                   // class="nav-link ml-auto"
+                  class = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextHome}
@@ -67,7 +68,7 @@ export default class Clients extends Component {
               </li>
               <li class="nav-item ml-auto">
                 <Button
-                  // class="nav-link"
+                  class = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextServices}
@@ -77,7 +78,7 @@ export default class Clients extends Component {
               </li>
               <li class="nav-item ml-auto">
                 <Button
-                  // class="nav-link"
+                  class = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextClients}
@@ -87,7 +88,7 @@ export default class Clients extends Component {
               </li>
               <li class="nav-item ml-auto">
                 <Button
-                  // class="nav-link"
+                  class = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   // onClick={scrollTextAboutUs}
@@ -97,7 +98,7 @@ export default class Clients extends Component {
               </li>
               <li class="nav-item ml-auto">
                 <Button
-                  // class="nav-link"
+                  class = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextContactUs}
