@@ -11,7 +11,7 @@ import Button from "@material-ui/core/Button";
 //     display: "none"
 //   }
 // });
-export default class Clients extends Component {
+export default class NavBarMob extends Component {
   render() {
     function scrollTextHome() {
       document.getElementById("Home").scrollIntoView({ behavior: "smooth" });
