@@ -1,39 +1,7 @@
 import React, { Component } from "react";
 import "../Css/ContactUs.css";
-import nodemailer from "nodemailer";
 export default class ContactUs extends Component {
   render() {
-    function sendMail(){
-      console.log("here")
-      var transporter = nodemailer.createTransport({
-       service: 'gmail',
-       auth: {
-         user: 'sumergiteme@gmail.com',
-        //  user : reviewer.email,
-         pass: 'U-CANT-SE-ME'
-        //  pass: reviewer.password
-       }
-     });
-     
-     var mailOptions = {
-       from: 'sumergiteme@gmail.com',
-      //  from: reviewer.email,
-       to: 'yahya.hisham97@gmail.com',
-      //  to: notification.emailOfRecipient,
-       subject: 'Company Request Accepted',
-       text: 'Automated message'
-     };
-     
-     transporter.sendMail(mailOptions, function(error, info){
-       if (error) {
-         console.log("error");
-       } else {
-         console.log('Email sent: ' + info.response);
-       }
-     
-    });
-   }
-
     return (
       <div id="Contact" className="Contact">
         <p>Contact Us</p>
@@ -67,7 +35,7 @@ export default class ContactUs extends Component {
             name="subject"
             placeholder="Write something.."
           />
-          <input type="submit" value="Submit" onClick={sendMail} />
+          <input type="submit" value="Submit" onClick={this.sendMail} />
         </div>
       </div>
     );
