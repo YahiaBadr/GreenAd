@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import "../Css/Test.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "react-bootstrap/Nav";
 export default class NavBar extends Component {
@@ -31,7 +32,7 @@ export default class NavBar extends Component {
 
         <Nav className="justify-content-end" activeKey="/home">
           <Nav.Item>
-            <Nav.Link class = "button"eventKey="Home" onSelect={scrollTextHome}>
+            <Nav.Link class = "button" eventKey="Home" onSelect={scrollTextHome}>
               Home
             </Nav.Link>
           </Nav.Item>

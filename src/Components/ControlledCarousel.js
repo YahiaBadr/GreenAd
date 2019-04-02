@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import '../Css/ControlledCarousel.css'
+import "../Css/ControlledCarousel.css";
 export default class ControlledCarousel extends Component {
   constructor(props, context) {
     super(props, context);
@@ -24,36 +24,42 @@ export default class ControlledCarousel extends Component {
     const { index, direction } = this.state;
 
     return (
-        <div id= "Home">
-      <Carousel
-        activeIndex={index}
-        direction={direction}
-        onSelect={this.handleSelect}
-      >
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://hmp.me/ciz8"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="http://i.imgur.com/QWGYHQh.jpg"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <div id="Home">
+        <Carousel
+          activeIndex={index}
+          direction={direction}
+          onSelect={this.handleSelect}
+        >
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://hmp.me/ciz8"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="http://i.imgur.com/QWGYHQh.jpg"
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <div className="carousel-item">
+            <img src="https://hmp.me/ci4v" alt="Los Angeles" />
+            <div className="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
+        </Carousel>
       </div>
     );
   }

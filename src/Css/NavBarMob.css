@@ -1,22 +1,55 @@
 .Header{
-    z-index: 10;
-    background: green;
-    position : fixed;
-    top : 0;
-    min-width: 100%;
-    /* max-height: 20v; */
-    max-height: 10%;
-    overflow: auto;
-    margin: 0 auto;
-  }
-  .Header img{
-    width:5%;
-    height:100% ;
-    max-height: 100vmin;
-    /* float: center; */
-  }
-  .Logo
-{
-  float: left;
-  widows: 30%;
+  z-index: 10;
+  position : fixed;
+  top : 0;
+  min-width: 100%;
+  overflow: auto;
+  margin: 0 auto;
 }
+.Logo
+{
+  /* background: url('https://hmp.me/ciz9') no-repeat center; */
+  /* width: 40px; */
+  /* height: 40px; */
+  color: rgb(0, 255, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+.button {
+  background: none;
+  cursor:unset;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  
+}
+button:focus 
+{
+  outline:0;
+}
+.navbar { 
+  z-index: 10;
+  background-color:black;
+  /* max-ght: 50px; */
+  /* background: url(http://sfwallpaper.com/images/solid-red-wallpaper-13.jpg); */
+  /* background: transparent; */
+}
+.navbar-toggler-icon
+{
+  /* width:26px; */
+  height: 35px;
+}
+
+button.navbar-toggler
+{
+  max-height: 35px;
+  outline:0;border-width:0
+} 
+/* .MuiButton-label-2
+{
+  font-size: 15px;
+} */
