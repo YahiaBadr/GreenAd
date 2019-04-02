@@ -9,6 +9,7 @@ import BodyText from "./Components/BodyText";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import ControlledCarousel from "./Components/ControlledCarousel";
+import MapContainer from "./Components/MapContainer";
 
 export default class App extends Component {
   render() {
@@ -21,11 +22,12 @@ export default class App extends Component {
           <div id="loader" />
             
           <div id="myDiv">
-            <NavBarMob />
+            <NavBarMob/>
             <ControlledCarousel />
             <BodyText />
             <Clients />
             <ContactUs />
+            <MapContainer/>
             <Footer />
           </div>
         </div>
