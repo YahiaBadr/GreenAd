@@ -52,9 +52,9 @@ export default class ControlledCarousel extends Component {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <img src="https://hmp.me/ci4v" alt="Los Angeles" />
-            <div class="carousel-caption">
+            <div className="carousel-caption">
               <h3>Los Angeles</h3>
               <p>We had such a great time in LA!</p>
             </div>

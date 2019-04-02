@@ -35,15 +35,15 @@ export default class NavBarMob extends Component {
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
       <div className="Header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Button class="Logo"
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <Button className="Logo"
           data-toggle="collapse"
           data-target=".navbar-collapse.show"
           onClick={scrollTextHome}
         >GreenAd
         </Button>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -51,24 +51,24 @@ export default class NavBarMob extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon" />
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item ml-auto active">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item ml-auto active">
                 <Button
                   // class="nav-link ml-auto"
-                  class = "button"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextHome}
                 >
-                  Home <span class="sr-only">(current)</span>
+                  Home <span className="sr-only">(current)</span>
                 </Button>
               </li>
-              <li class="nav-item ml-auto">
+              <li className="nav-item ml-auto">
                 <Button
-                  class = "button"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextServices}
@@ -76,9 +76,9 @@ export default class NavBarMob extends Component {
                   Services
                 </Button>
               </li>
-              <li class="nav-item ml-auto">
+              <li className="nav-item ml-auto">
                 <Button
-                  class = "button"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextClients}
@@ -86,9 +86,9 @@ export default class NavBarMob extends Component {
                   Clients
                 </Button>
               </li>
-              <li class="nav-item ml-auto">
+              <li className="nav-item ml-auto">
                 <Button
-                  class = "button"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   // onClick={scrollTextAboutUs}
@@ -96,9 +96,9 @@ export default class NavBarMob extends Component {
                   AboutUS
                 </Button>
               </li>
-              <li class="nav-item ml-auto">
+              <li className="nav-item ml-auto">
                 <Button
-                  class = "button"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextContactUs}
