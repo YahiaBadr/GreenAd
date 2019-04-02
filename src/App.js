@@ -9,6 +9,8 @@ import BodyText from "./Components/BodyText";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import ControlledCarousel from "./Components/ControlledCarousel";
+import FlipImageY from "./Components/FlipImageY";
+import FlipImageX from "./Components/FlipImageX";
 
 export default class App extends Component {
   render() {
@@ -26,6 +28,8 @@ export default class App extends Component {
             <BodyText />
             <Clients />
             <ContactUs />
+            <FlipImageX/>
+            <FlipImageY/>
             <Footer />
           </div>
         </div>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+.bodyX{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    align-self: center;
+}
+.textX{
+    color: aqua;
+}
+.cardX{
+    display: inline-block;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.4s; 
+}
+.cardX .frontX{
+    top: 0;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.2s;
+}
+.cardX:hover .frontX{
+    transform: rotateX(-180deg);
+}
+.cardX .backX{
+    position: absolute;
+    overflow:hidden;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.2s;
+}
+.cardX:hover .backX{
+    transform: rotateX(0deg);
+}
