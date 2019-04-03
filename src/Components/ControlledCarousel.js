@@ -55,7 +55,7 @@ export default class ControlledCarousel extends Component {
           </Carousel.Item>
 
           <Carousel.Item>
-            <img src="https://hmp.me/ci4v" alt="Los Angeles" />
+            <img src="https://hmp.me/cjc5" alt="Los Angeles" />
             <Carousel.Caption>
             <h3>Los Angeles</h3>
               <p>We had such a great time in LA!</p>
