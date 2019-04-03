@@ -6,18 +6,19 @@ import React, { Component } from "react";
 //Classes
 import NavBarMob from "./Components/NavBarMob";
 import Clients from "./Components/Clients";
-import BodyText from "./Components/BodyText";
+import AboutUs from "./Components/AboutUs";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import ControlledCarousel from "./Components/ControlledCarousel";
-
+import ScrollAnimation from 'react-animate-on-scroll';
 // import FlipImageY from "./Components/FlipImageY";
 // import FlipImageX from "./Components/FlipImageX";
 // import MemberList from "./Components/MemberList";
 import MemberList2 from "./Components/MemberList2";
 import Padd from "./Components/Padd";
 import MapContainer from "./Components/MapContainer";
-import ScrollAnimation from 'react-animate-on-scroll';
+
+
 
 
 export default class App extends Component {
@@ -35,16 +36,41 @@ export default class App extends Component {
           <div id="myDiv">
 
             <NavBarMob />
+            
             <Padd />
+            
             <ControlledCarousel />
-            <BodyText />
-            <Clients />
-            <ContactUs />
-            <MemberList2 />
-            <ScrollAnimation animateIn="rollIn" animateOut="rollOut" delay="600" >
-              <BodyText />
+
+            <Padd />
+            
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <AboutUs />
             </ScrollAnimation>
+
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <Clients />
+            </ScrollAnimation>
+            
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <ContactUs />
+            </ScrollAnimation>
+            
+            <Padd />
+
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <MemberList2 />
+            </ScrollAnimation>
+            
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <AboutUs />
+            </ScrollAnimation>
+
+
+            <Padd/>
+
+            
             <MapContainer/>
+            
             <Footer />
             
           </div>
