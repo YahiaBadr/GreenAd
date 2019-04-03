@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../Css/ControlledCarousel.css";
-export default class ControlledCarousel extends Component {
+import "../Css/MemberList.css";
+import FlipImageY from "./FlipImageY";
+import FlipImageX from "./FlipImageX";
+
+export default class MemberList extends Component {
   constructor(props, context) {
     super(props, context);
 
@@ -28,13 +32,14 @@ export default class ControlledCarousel extends Component {
         <Carousel
           activeIndex={index}
           direction={direction}
-          onSelect={this.handleSelect}>
+          onSelect={this.handleSelect}
+        >
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://hmp.me/ciz8"
-              alt="First slide"
-            />
+            <FlipImageX imageSrc="https://www.w3schools.com/images/w3schools_green.jpg" />
+            {/* <FlipImageX imageSrc="https://www.w3schools.com/images/w3schools_green.jpg"/>
+                <FlipImageX imageSrc="https://www.w3schools.com/images/w3schools_green.jpg"/>
+                <FlipImageX imageSrc="https://www.w3schools.com/images/w3schools_green.jpg"/>
+                <FlipImageX imageSrc="https://www.w3schools.com/images/w3schools_green.jpg"/> */}
             <Carousel.Caption>
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -42,11 +47,7 @@ export default class ControlledCarousel extends Component {
           </Carousel.Item>
 
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://i.imgur.com/QWGYHQh.jpg"
-              alt="Third slide"
-            />
+            <FlipImageX imageSrc="https://www.w3schools.com/images/w3schools_green.jpg" />
             <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -54,13 +55,12 @@ export default class ControlledCarousel extends Component {
           </Carousel.Item>
 
           <Carousel.Item>
-            <img src="https://hmp.me/ci4v" alt="Los Angeles" />
+            <FlipImageX imageSrc="https://www.w3schools.com/images/w3schools_green.jpg" />
             <Carousel.Caption>
-            <h3>Los Angeles</h3>
+              <h3>Los Angeles</h3>
               <p>We had such a great time in LA!</p>
             </Carousel.Caption>
           </Carousel.Item>
-          
         </Carousel>
       </div>
     );

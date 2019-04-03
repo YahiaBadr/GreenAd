@@ -18,8 +18,8 @@
 .cardY .frontY{
     top: 0;
     overflow:hidden;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     backface-visibility: hidden;
     transform: rotateY(0deg);
     transition: 0.2s;
@@ -31,8 +31,8 @@
     position: absolute;
     overflow:hidden;
     top: 0;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     background: #000;
     backface-visibility: hidden;
     transform: rotateY(180deg);

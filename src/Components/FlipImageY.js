@@ -11,7 +11,7 @@ export default class FlipImageY extends Component{
             <div class="cardY">
 
               <div className="frontY">
-              <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"/>
+              <img src={this.props.imageSrc} alt="W3Schools.com"/>
               {/* <img src="https://hmp.me/cjbf" alt="yaya"/> */}
               </div>
               <div className="backY">
