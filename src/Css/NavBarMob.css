@@ -15,7 +15,7 @@
   font-weight: bold;
   font-size: 20px;
 }
-.button {
+button {
   background: none;
   cursor:unset;
   border: none;
@@ -25,7 +25,6 @@
   cursor: pointer;
   color: white;
   font-weight: bold;
-  
 }
 button:focus 
 {
@@ -51,5 +50,13 @@ button.navbar-toggler
 } 
 /* .MuiButton-label-2
 {
-  font-size: 15px;
+  background: none;
+  cursor:unset;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
 } */
