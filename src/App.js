@@ -7,10 +7,11 @@ import React, { Component } from "react";
 import NavBarMob from "./Components/NavBarMob";
 import Clients from "./Components/Clients";
 import Services from "./Components/Services";
+import AboutUs from "./Components/AboutUs";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import ControlledCarousel from "./Components/ControlledCarousel";
-
+import ScrollAnimation from 'react-animate-on-scroll';
 // import FlipImageY from "./Components/FlipImageY";
 // import FlipImageX from "./Components/FlipImageX";
 // import MemberList from "./Components/MemberList";
@@ -20,6 +21,9 @@ import MapContainer from "./Components/MapContainer";
 import ScrollAnimation from 'react-animate-on-scroll';
 import CarouselUS from './Components/CarouselUs';
 // import ReactCarousel from './Components/ReactCarousel';
+
+
+
 
 export default class App extends Component {
   render() {
@@ -37,14 +41,50 @@ export default class App extends Component {
 
             <NavBarMob />
             {/* <Padd /> */}
-            <ControlledCarousel />
-            <Services />
+//             <ControlledCarousel />
+            
             {/* <ReactCarousel/> */}
+           
+//             <Clients />
+//             <ContactUs />
+//             <MemberList2 />
+            
+//             <Padd />
+            
+            <ControlledCarousel />
+
+//             <Padd />
+            
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <Services />
+            </ScrollAnimation>
+            
             <CarouselUS/>
-            <Clients />
-            <ContactUs />
-            <MemberList2 />
+            
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <Clients />
+            </ScrollAnimation>
+            
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <ContactUs />
+            </ScrollAnimation>
+            
+            <Padd />
+
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <MemberList2 />
+            </ScrollAnimation>
+            
+            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+              <AboutUs />
+            </ScrollAnimation>
+
+
+            <Padd/>
+
+            
             <MapContainer/>
+            
             <Footer />
             
           </div>
