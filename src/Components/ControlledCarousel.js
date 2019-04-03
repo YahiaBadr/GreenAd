@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../Css/ControlledCarousel.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 export default class ControlledCarousel extends Component {
   constructor(props, context) {
     super(props, context);
@@ -36,8 +38,11 @@ export default class ControlledCarousel extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
+            {/* <ScrollAnimation animateIn="fadeInUp" animateOut="rollOut" delay="200" > */}
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            {/* </ScrollAnimation> */}
+              
             </Carousel.Caption>
           </Carousel.Item>
 
