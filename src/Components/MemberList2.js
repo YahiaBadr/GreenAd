@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FlipImageY from "./FlipImageY";
+// import FlipImageY from "./FlipImageY";
 import FlipImageX from "./FlipImageX";
 import "../Css/MemberList2.css";
 

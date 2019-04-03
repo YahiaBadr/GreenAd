@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../Css/ControlledCarousel.css";
 import "../Css/MemberList.css";
-import FlipImageY from "./FlipImageY";
+// import FlipImageY from "./FlipImageY";
 import FlipImageX from "./FlipImageX";
 
 export default class MemberList extends Component {

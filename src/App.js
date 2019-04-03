@@ -11,9 +11,9 @@ import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import ControlledCarousel from "./Components/ControlledCarousel";
 
-import FlipImageY from "./Components/FlipImageY";
-import FlipImageX from "./Components/FlipImageX";
-import MemberList from "./Components/MemberList";
+// import FlipImageY from "./Components/FlipImageY";
+// import FlipImageX from "./Components/FlipImageX";
+// import MemberList from "./Components/MemberList";
 import MemberList2 from "./Components/MemberList2";
 import Padd from "./Components/Padd";
 import MapContainer from "./Components/MapContainer";
