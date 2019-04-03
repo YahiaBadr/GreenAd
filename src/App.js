@@ -18,7 +18,8 @@ import MemberList2 from "./Components/MemberList2";
 import Padd from "./Components/Padd";
 import MapContainer from "./Components/MapContainer";
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import CarouselUS from './Components/CarouselUs';
+// import ReactCarousel from './Components/ReactCarousel';
 
 export default class App extends Component {
   render() {
@@ -35,9 +36,11 @@ export default class App extends Component {
           <div id="myDiv">
 
             <NavBarMob />
-            <Padd />
+            {/* <Padd /> */}
             <ControlledCarousel />
             <BodyText />
+            {/* <ReactCarousel/> */}
+            <CarouselUS/>
             <Clients />
             <ContactUs />
             <MemberList2 />
