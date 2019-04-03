@@ -5,7 +5,7 @@ import "../Css/FlipImageX.css";
 export default class FlipImageX extends Component{
     render()
     {
-        const classes = this.props; 
+        // const classes = this.props; 
         return(
         <div className="bodyX">
             <div class="cardX">
