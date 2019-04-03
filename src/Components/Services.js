@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "../Css/BodyText.css";
+import "../Css/Services.css";
 
-export default class BodyText extends Component {
+export default class Services extends Component {
   render() {
     return (
-      <div id="Services" className="Body" >
+      <div id="Services" className="Services" >
        <h1 className="Services_Header">Our Services</h1>
        <br/>
        <div className="Head1">Ideas could be impressive, they live everywhere at every moment.</div>

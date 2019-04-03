@@ -6,7 +6,7 @@ import React, { Component } from "react";
 //Classes
 import NavBarMob from "./Components/NavBarMob";
 import Clients from "./Components/Clients";
-import BodyText from "./Components/BodyText";
+import Services from "./Components/Services";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import ControlledCarousel from "./Components/ControlledCarousel";
@@ -38,15 +38,12 @@ export default class App extends Component {
             <NavBarMob />
             {/* <Padd /> */}
             <ControlledCarousel />
-            <BodyText />
+            <Services />
             {/* <ReactCarousel/> */}
             <CarouselUS/>
             <Clients />
             <ContactUs />
             <MemberList2 />
-            <ScrollAnimation animateIn="rollIn" animateOut="rollOut" delay="600" >
-              <BodyText />
-            </ScrollAnimation>
             <MapContainer/>
             <Footer />
             
