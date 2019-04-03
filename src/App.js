@@ -6,6 +6,7 @@ import React, { Component } from "react";
 //Classes
 import NavBarMob from "./Components/NavBarMob";
 import Clients from "./Components/Clients";
+import Services from "./Components/Services";
 import AboutUs from "./Components/AboutUs";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
@@ -17,6 +18,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import MemberList2 from "./Components/MemberList2";
 import Padd from "./Components/Padd";
 import MapContainer from "./Components/MapContainer";
+import ScrollAnimation from 'react-animate-on-scroll';
+import CarouselUS from './Components/CarouselUs';
+// import ReactCarousel from './Components/ReactCarousel';
 
 
 
@@ -36,17 +40,27 @@ export default class App extends Component {
           <div id="myDiv">
 
             <NavBarMob />
+            {/* <Padd /> */}
+//             <ControlledCarousel />
             
-            <Padd />
+            {/* <ReactCarousel/> */}
+           
+//             <Clients />
+//             <ContactUs />
+//             <MemberList2 />
+            
+//             <Padd />
             
             <ControlledCarousel />
 
-            <Padd />
+//             <Padd />
             
             <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
-              <AboutUs />
+              <Services />
             </ScrollAnimation>
-
+            
+            <CarouselUS/>
+            
             <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
               <Clients />
             </ScrollAnimation>

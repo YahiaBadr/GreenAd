@@ -8,13 +8,21 @@
 }
 .Logo
 {
-  /* background: url('https://hmp.me/ciz9') no-repeat center; */
-  /* width: 40px; */
+  /* background: url('https://hmp.me/cjdi') no-repeat center; */
+  /* background-size: 100% 100%; */
+  width: 150px;
+  /* min-width: 90px; */
   /* height: 40px; */
   color: rgb(255, 0, 0);
   font-weight: bold;
   font-size: 20px;
+  background-size: cover;
+  /* padding: 0; */
+  /* padding: 8px 8px 8px 32px; */
 }
+#GreenAd { 
+	width: 100%;
+	}
 button {
   background: none;
   cursor:unset;

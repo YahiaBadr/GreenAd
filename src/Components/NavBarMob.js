@@ -8,9 +8,9 @@ export default class Clients extends Component {
     function scrollTextHome() {
       document.getElementById("Home").scrollIntoView({ behavior: "smooth", block: 'center' });
     }
-    // function scrollTextAboutUs() {
-    //   document.getElementById("AboutUs").scrollIntoView({ behavior: "smooth", block: 'center'  });
-    // }
+    function scrollTextAboutUs() {
+      document.getElementById("AboutUs").scrollIntoView({ behavior: "smooth", block: 'center'  });
+    }
     function scrollTextServices() {
       document
         .getElementById("Services")
@@ -18,6 +18,9 @@ export default class Clients extends Component {
     }
     function scrollTextClients() {
       document.getElementById("Clients").scrollIntoView({ behavior: "smooth", block: 'center'  });
+    }
+    function scrollTextTeam() {
+      document.getElementById("Team").scrollIntoView({ behavior: "smooth", block: 'center'  });
     }
     function scrollTextContactUs() {
       document.getElementById("Contact").scrollIntoView({ behavior: "smooth", block: 'center'  });
@@ -27,13 +30,16 @@ export default class Clients extends Component {
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
       <div className="Header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Button class="Logo"
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <button 
+        // class="navbar-brand"
+          class="Logo"
           data-toggle="collapse"
           data-target=".navbar-collapse.show"
           onClick={scrollTextHome}
-        >GreenAd
-        </Button>
+        >
+        <img id="GreenAd" src="https://hmp.me/cjdi" width="30%"/>
+        </button>
           <button
             class="navbar-toggler"
             type="button"
@@ -83,7 +89,17 @@ export default class Clients extends Component {
                   class = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  // onClick={scrollTextAboutUs}
+                  onClick={scrollTextTeam}
+                >
+                  Team
+                </Button>
+              </li>
+              <li class="nav-item ml-auto">
+                <Button
+                  class = "button"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  onClick={scrollTextAboutUs}
                 >
                   AboutUS
                 </Button>

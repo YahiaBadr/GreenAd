@@ -15,6 +15,7 @@
     "google-maps-react": "^2.0.2",
     "nodemailer": "^6.0.0",
     "nodemon": "^1.18.10",
+    "pure-react-carousel": "^1.19.0",
     "react": "^16.8.5",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.0.0-beta.6",
