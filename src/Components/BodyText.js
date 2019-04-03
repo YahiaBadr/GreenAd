@@ -4,7 +4,7 @@ import "../Css/BodyText.css";
 export default class BodyText extends Component {
   render() {
     return (
-      <div id="Services" className="Body">
+      <div id="Services" className="Body" >
         A well-organized paragraph supports or develops a single controlling
         idea, which is expressed in a sentence called the topic sentence. A
         topic sentence has several important functions: it substantiates or

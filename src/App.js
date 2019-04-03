@@ -1,5 +1,6 @@
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "animate.css/animate.min.css";
 import React, { Component } from "react";
 
 //Classes
@@ -16,6 +17,7 @@ import MemberList from "./Components/MemberList";
 import MemberList2 from "./Components/MemberList2";
 import Padd from "./Components/Padd";
 import MapContainer from "./Components/MapContainer";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export default class App extends Component {
@@ -24,6 +26,8 @@ export default class App extends Component {
       document.getElementById("loader").style.display = "none";
       document.getElementById("myDiv").style.display = "block";
     }
+
+    
       return (
         <div onLoad={showPage}>
           <div id="loader" />
@@ -33,16 +37,16 @@ export default class App extends Component {
             <NavBarMob />
             <Padd />
             <ControlledCarousel />
-            <Padd />
             <BodyText />
-            <Padd />
             <Clients />
-            <Padd />
             <ContactUs />
-            <Padd />
             <MemberList2 />
+            <ScrollAnimation animateIn="rollIn" animateOut="rollOut" delay="600" >
+              <BodyText />
+            </ScrollAnimation>
             <MapContainer/>
             <Footer />
+            
           </div>
         </div>
       );
