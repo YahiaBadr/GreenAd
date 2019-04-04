@@ -33,7 +33,7 @@ export default class ControlledCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://hmp.me/ciz8"
+              src="https://www.setaswall.com/wp-content/uploads/2017/11/Black-And-Red-Abstract-Wallpaper-08-1920x1200.jpg"
               alt="First slide"
             />
             <Carousel.Caption>
