@@ -41,11 +41,16 @@ export default class Clients extends Component {
       var scrollTo=document.getElementById("Contact").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
       window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
     }
-    const opacity = Math.min(100 / this.state.currentScrollHeight  , 1)
+    const opacity = 1-Math.min(100 / this.state.currentScrollHeight  , 1)
+    const styles = {
+    content: {
+      backgroundColor: 'rgba(0, 0, 0,'+ opacity +')',
+    }
+  }
     return (
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
-      <div className="Header" id="Header" style={{opacity}}>
+      <div className="Header" id="Header" style={styles.content}>
         <nav class="navbar navbar-expand-lg navbar-dark bg-">
         <button 
         // class="navbar-brand"
