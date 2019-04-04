@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+.AboutUs
+{
+  z-index: 0;
+  font-size: 20px;
+  /* position: absolute; */
+  /* height: 50vh; */
+  /* text-align: center; */
+  padding: 5%;
+  /* margin-left: 10vh; */
+  font-family: 'Josefin Sans',sans-serif;
+  align-self: center;
+  color:gold; 
+  background: black;
+  background-image: url("https://hmp.me/cjdg");
+  /* background-repeat: round; */
+  background-size: 100% 100%;
+}

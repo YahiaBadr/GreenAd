@@ -8,13 +8,23 @@
 }
 .Logo
 {
-  /* background: url('https://hmp.me/ciz9') no-repeat center; */
-  /* width: 40px; */
+  /* background: url('https://hmp.me/cjdi') no-repeat center; */
+  /* background-size: 100% 100%; */
+  width: 150px;
+  height: 100%;
+  /* min-width: 90px; */
   /* height: 40px; */
-  color: rgb(0, 255, 0);
+  color: rgb(255, 0, 0);
   font-weight: bold;
   font-size: 20px;
+  background-size: cover;
+  /* padding: 0; */
+  /* padding: 8px 8px 8px 32px; */
 }
+#GreenAd { 
+  width: auto;
+  height: 100%;
+	}
 button {
   background: none;
   cursor:unset;
@@ -23,7 +33,7 @@ button {
   outline: none;
   transition: all 0.5s;
   cursor: pointer;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 button:focus 
@@ -33,6 +43,7 @@ button:focus
 .navbar { 
   z-index: 10;
   background-color:black;
+  height: 10vh;
   /* max-ght: 50px; */
   /* background: url(http://sfwallpaper.com/images/solid-red-wallpaper-13.jpg); */
   /* background: transparent; */

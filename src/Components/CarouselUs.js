@@ -11,21 +11,21 @@ export default class CarouselUs extends Component{
         
         return(
             <div id = "Services">
-            <Carousel className="Carousel" autoPlay infiniteLoop emulateTouch>
+            <Carousel className="Carousel" autoPlay infiniteLoop emulateTouch showThumbs={false} showStatus={false} width="100%" dynamicHeight={true} stopOnHover={false}>
                 <div>
-                    <img alt="" src="http://katameyadowntown.com/wp-content/uploads/2016/09/vodafone-1.png"/>
-                    <p className="legend">Legend 1</p>
+                    <img alt="" src=""/>
                 </div>
                 <div>
-                    <img alt="" src="https://ymcss.b8cdn.com/assets/yallamotor_large.png"/>
-                    <p className="legend">Legend 2</p>
+                    <img alt="" src=""/>
                 </div>
                 <div>
-                    <img alt="" src="https://www.orange.eg/Style%20Library/OrangeImages/OrangeLogo-fb.jpg"/>
-                    <p className="legend">Legend 3</p>
+                    <img alt="" src=""/>
                 </div>
             </Carousel>
             </div>
         )
     }
 }
+
+// https://hmp.me/cjc7
+// https://ak6.picdn.net/shutterstock/videos/871936/thumb/1.jpg

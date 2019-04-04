@@ -1,10 +1,14 @@
 import React, { Component } from "react";
-import "../Css/BodyText.css";
+import "../Css/AboutUs.css";
 
-export default class BodyText extends Component {
+export default class AboutUs extends Component {
   render() {
     return (
-      <div id="Services" className="Body" >
+      
+      <div id="AboutUs" className="AboutUs" >
+      <h1>About Us</h1>
+      <br/>
+      <div>
         A well-organized paragraph supports or develops a single controlling
         idea, which is expressed in a sentence called the topic sentence. A
         topic sentence has several important functions: it substantiates or
@@ -18,6 +22,7 @@ export default class BodyText extends Component {
         sentence before the topic sentence—for example, a sentence linking the
         current paragraph to the previous one, or one providing background
         information.
+        </div>
       </div>
     );
   }
