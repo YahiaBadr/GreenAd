@@ -13,7 +13,6 @@ import Footer from "./Components/Footer";
 import ControlledCarousel from "./Components/ControlledCarousel";
 import ScrollAnimation from 'react-animate-on-scroll';
 import MemberList2 from "./Components/MemberList2";
-import Padd from "./Components/Padd";
 import MapContainer from "./Components/MapContainer";
 import CarouselUS from './Components/CarouselUs';
 
@@ -44,7 +43,7 @@ export default class App extends Component {
 
             <AboutUs />
 
-            <ScrollAnimation animateIn="fadeInUp" animateOnce="true" delay="100" >
+            <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={100} >
               <ContactUs /> 
             </ScrollAnimation>
 
