@@ -33,8 +33,11 @@ button {
   outline: none;
   transition: all 0.5s;
   cursor: pointer;
-  color: red;
+  color: white;
   font-weight: bold;
+}
+button:hover{
+  color:red
 }
 button:focus 
 {
@@ -42,8 +45,8 @@ button:focus
 }
 .navbar { 
   z-index: 10;
-  background-color:black;
-
+  background-color:rgba(0, 0, 0, 0);
+  
   /* height: 8vh; */
   /* height: 10vh; */
   /* max-ght: 50px; */

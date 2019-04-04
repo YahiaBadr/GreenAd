@@ -37,6 +37,7 @@ export default class ContactUs extends Component {
           />
           <input type="submit" value="Submit" onClick={this.sendMail} />
         </div>
+        <br/>
       </div>
     );
   }
