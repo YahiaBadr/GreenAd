@@ -4,7 +4,7 @@ export default class ContactUs extends Component {
   render() {
     return (
       <div id="Contact" className="Contact">
-        <p>Contact Us</p>
+        <h1>Contact Us</h1>
         <div>
           <label>First Name</label>
           <input

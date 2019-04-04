@@ -9,7 +9,7 @@
 }
 .textX{
     padding-top: 30%;
-    color:rgb(255, 230, 91);
+    color:black;
     font-size: 20px;
 }
 .cardX{
@@ -18,6 +18,19 @@
     perspective: 600px;
     transition: 0.4s; 
 }
+
+@media screen and (max-width:800px){
+    .myImage{
+        width: 25vw; 
+    }
+    .textX{
+        padding-top: 30%;
+        color:black;
+        font-size: 3vw;
+    }
+}
+
+
 .cardX .frontX{
     top: 0;
     overflow:hidden;
@@ -41,9 +54,9 @@
     
     /* background: red; */
     /* golden card */
-    /* background-image: url("https://hmp.me/cjez"); */
+    background-image: url("https://hmp.me/cjez");
     /* black card */
-    background-image: url("https://hmp.me/cje2");
+    /* background-image: url("https://hmp.me/cje2"); */
     background-size: 100% 100%;
     backface-visibility: hidden;
     transform: rotateX(180deg);
