@@ -9,6 +9,7 @@ export default class MemberList extends Component {
       
       <div id="Team">
       <br/>
+      <h1>Our Team</h1>
         <div>
           <div className="member">
             <FlipImageX imageSrc="https://www.w3schools.com/images/w3schools_green.jpg" />
