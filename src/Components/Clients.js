@@ -28,13 +28,13 @@ export default class Clients extends Component{
             
                 
                 
-                <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+                <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={100} >
                  <img alt="" src="http://pngimg.com/uploads/google/google_PNG19644.png"/>
                  <img alt="" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Shell_logo.svg/1200px-Shell_logo.svg.png"/>
                  <img alt="" src="http://pluspng.com/img-png/samsung-logo-png-exciting-samsung-logo-vector-free-download-58-for-design-logo-with-samsung-logo-vector-free-download-1269.png"/>
                  </ScrollAnimation>
                  <br/>
-                 <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+                 <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={100} >
                  <img alt="" src="https://pngimg.com/uploads/uber/uber_PNG24.png"/>
                  <img alt="" src="https://upload.wikimedia.org/wikipedia/sco/d/d5/Vodafone_logo.png"/>
                  <img alt="" src="http://pngimg.com/uploads/whatsapp/whatsapp_PNG20.png"/>

@@ -6,30 +6,34 @@ import Button from "@material-ui/core/Button";
 export default class Clients extends Component {
   render() {
     function scrollTextHome() {
-      document.getElementById("Home").scrollIntoView({ behavior: "smooth", block: 'center' });
+      var scrollTo=document.getElementById("Home").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
+      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
     }
     function scrollTextAboutUs() {
-      document.getElementById("AboutUs").scrollIntoView({ behavior: "smooth", block: 'center'  });
+      var scrollTo=document.getElementById("AboutUs").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
+      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
     }
     function scrollTextServices() {
-      document
-        .getElementById("Services")
-        .scrollIntoView({ behavior: "smooth", block: 'center' });
+      var scrollTo=document.getElementById("Services").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
+      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
     }
-    function scrollTextClients() {
-      document.getElementById("Clients").scrollIntoView({ behavior: "smooth", block: 'center'  });
+    async function scrollTextClients() {
+      var scrollTo=document.getElementById("Clients").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
+      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
     }
     function scrollTextTeam() {
-      document.getElementById("team").scrollIntoView({ behavior: "smooth", block: 'center'  });
+      var scrollTo=document.getElementById("team").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
+      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
     }
     function scrollTextContactUs() {
-      document.getElementById("Contact").scrollIntoView({ behavior: "smooth", block: 'center'  });
+      var scrollTo=document.getElementById("Contact").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
+      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
     }
     // const { classes } = this.props;
     return (
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
-      <div className="Header">
+      <div className="Header" id="Header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-">
         <button 
         // class="navbar-brand"
@@ -38,7 +42,7 @@ export default class Clients extends Component {
           data-target=".navbar-collapse.show"
           onClick={scrollTextHome}
         >
-        <img id="GreenAd" src="http://i.hmp.me/m/96a2deb459a5c4e5842776f1573683c3.png"/>
+        <img id="GreenAd" src="http://i.hmp.me/m/96a2deb459a5c4e5842776f1573683c3.png" alt="Green_Ad_Logo"/>
         </button>
           <button
             class="navbar-toggler"
