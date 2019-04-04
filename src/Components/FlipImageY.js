@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../Css/FlipImageY.css";
 
 
-export default class FlipImageY extends Component{
+export default class FlipImageX extends Component{
     render()
     {
         // const classes = this.props; 
@@ -11,19 +11,13 @@ export default class FlipImageY extends Component{
             <div class="cardY">
 
               <div className="frontY">
-              <img src={this.props.imageSrc} alt="W3Schools.com"/>
+              <img className="myImage"  src={this.props.imageSrc} alt="W3Schools.com"/>
               {/* <img src="https://hmp.me/cjbf" alt="yaya"/> */}
               </div>
               <div className="backY">
                     <div class="detailsY">
-                        <h2 className="textY">KITTY<br/><span>Verry fluffy</span></h2>
-                        <div class="social-iconsY">
-                        <a /*href="#"*/><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a /*href="#"*/><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a /*href="#"*/><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        <a /*href="#"*/><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-
-                        </div>
+                        <h2 className="textY">Ahmed Mohamed<br/><span>Web developer</span></h2>
+                        
                     </div>
               </div>
             </div>

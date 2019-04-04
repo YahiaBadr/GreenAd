@@ -11,7 +11,7 @@ export default class FlipImageX extends Component{
             <div class="cardX">
 
               <div className="frontX">
-              <img src={this.props.imageSrc} alt="W3Schools.com"/>
+              <img className="myImage"  src={this.props.imageSrc} alt="W3Schools.com"/>
               {/* <img src="https://hmp.me/cjbf" alt="yaya"/> */}
               </div>
               <div className="backX">

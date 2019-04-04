@@ -1,9 +1,5 @@
 .team{
-    /* background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/BIgBk6S0iu0gyfo1/abstract-background-with-shining-red-sunburst-smooth-animation-looped-with-a-central-place-for-your-logo-text-abstract-purple-sunburst-rays-of-light-4k-ultra-hd-video_r7rzsxwa_thumbnail-full01.png"); */
-    /* background-image: url("https://hmp.me/cjfd"); */
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjW1NizTp7JAYsYl5tbiap6ioZOH0Rd0lPSHXDtHbwifs1SW0DgA"); */
     background-image: url("https://wallpapercave.com/wp/VDGT5zT.jpg");
-    /* background-repeat: round; */
     background-size: 100% 100%;
     color:rgb(255, 230, 91);
 }
@@ -11,8 +7,8 @@
     display: inline-block;
     padding: 2%;
 }
-/* .dodo1{
-    background-image: url("https://hmp.me/cjfb");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-} */
+
+
+.hr{
+    color:rgb(255, 230, 91);
+}
