@@ -14,7 +14,10 @@ export default class Clients extends Component {
      {
          this.setState({currentScrollHeight: newScrollHeight})
      }
-   }
+    }
+    // Button.disableRipple = true;
+    // Button.disableFocusRipple = true;
+    
  }
   render() {
     function scrollTextHome() {
@@ -51,7 +54,7 @@ export default class Clients extends Component {
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
       <div className="Header" id="Header" style={styles.content}>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-">
+        <nav class="navbar navbar-expand-lg navbar-light bg-">
         <button 
         // class="navbar-brand"
           class="Logo"
@@ -81,6 +84,7 @@ export default class Clients extends Component {
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextHome}
+                  disableRipple = {true}
                 >
                   Home <span class="sr-only">(current)</span>
                 </Button>
@@ -91,6 +95,7 @@ export default class Clients extends Component {
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextServices}
+                  disableRipple = {true}
                 >
                   Services
                 </Button>
@@ -101,6 +106,7 @@ export default class Clients extends Component {
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextClients}
+                  disableRipple = {true}
                 >
                   Clients
                 </Button>
@@ -111,6 +117,7 @@ export default class Clients extends Component {
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextTeam}
+                  disableRipple = {true}
                 >
                   Team
                 </Button>
@@ -121,6 +128,7 @@ export default class Clients extends Component {
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextAboutUs}
+                  disableRipple = {true}
                 >
                   AboutUS
                 </Button>
@@ -131,6 +139,7 @@ export default class Clients extends Component {
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={scrollTextContactUs}
+                  disableRipple = {true}
                 >
                   ContactUS
                 </Button>

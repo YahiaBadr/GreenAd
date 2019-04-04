@@ -33,7 +33,7 @@ button {
   outline: none;
   transition: all 0.5s;
   cursor: pointer;
-  color: goldenrod;
+  color: rgb(218, 165, 32);
   font-weight: bold;
 }
 button:hover{
