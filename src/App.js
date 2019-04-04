@@ -33,22 +33,25 @@ export default class App extends Component {
 
             <NavBarMob />
             <ControlledCarousel />
-            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
-              <Services />
-            </ScrollAnimation>
+
+            <Services />
+
             <CarouselUS/>
+
             <Clients />
-            <Padd />
-            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
-              <MemberList2 />
-            </ScrollAnimation>
+
+            <MemberList2 />
+
+            <AboutUs />
+
             <ScrollAnimation animateIn="fadeInUp" animateOnce="true" delay="100" >
-              <AboutUs />
+              <ContactUs /> 
             </ScrollAnimation>
-            <Padd/>
-            <ContactUs />
+
             <MapContainer/>
             <Footer />
+            
+            
             
           </div>
         </div>

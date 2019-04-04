@@ -5,11 +5,17 @@
   min-width: 100%;
   overflow: auto;
   margin: 0 auto;
+
 }
 .Logo
 {
   width: 150px;
-  height: 100%;
+
+  height: 5vh;
+  top:0;
+  /* min-width: 90px; */
+  /* height: 40px; */
+
   color: rgb(255, 0, 0);
   font-weight: bold;
   font-size: 20px;
@@ -27,7 +33,7 @@ button {
   outline: none;
   transition: all 0.5s;
   cursor: pointer;
-  color: black;
+  color: red;
   font-weight: bold;
 }
 button:focus 
@@ -37,7 +43,13 @@ button:focus
 .navbar { 
   z-index: 10;
   background-color:black;
-  height: 10vh;
+
+  /* height: 8vh; */
+  /* height: 10vh; */
+  /* max-ght: 50px; */
+  /* background: url(http://sfwallpaper.com/images/solid-red-wallpaper-13.jpg); */
+  /* background: transparent; */
+
 }
 .navbar-toggler-icon
 {
@@ -47,5 +59,21 @@ button:focus
 button.navbar-toggler
 {
   max-height: 35px;
-  outline:0;border-width:0
+  outline:0;border-width:0;
+} 
+/* .MuiButton-label-2
+{
+  background: none;
+  cursor:unset;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+} */
+
+
 }
+

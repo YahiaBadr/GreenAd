@@ -16,14 +16,8 @@ export default class FlipImageX extends Component{
               </div>
               <div className="backX">
                     <div class="detailsX">
-                        <h2 className="textX">KITTY<br/><span>Verry fluffy</span></h2>
-                        <div class="social-iconsX">
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-
-                        </div>
+                        <h2 className="textX">Ahmed Mohamed<br/><span>Web developer</span></h2>
+                        
                     </div>
               </div>
             </div>

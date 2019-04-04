@@ -30,7 +30,7 @@ export default class Clients extends Component {
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
       <div className="Header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-">
         <button 
         // class="navbar-brand"
           class="Logo"
