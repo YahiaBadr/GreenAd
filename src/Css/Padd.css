@@ -1,9 +1,6 @@
 .padd{
     text-align: center;
     height: 6.6vh;
-    /* background:rgb(253, 185, 13); */
-    /* background: transparent; */
     background-image: url("https://hmp.me/cjdh") ;
-    /* background-image: url("https://hmp.me/cjdj") ; */
     background-repeat: round;
 }
