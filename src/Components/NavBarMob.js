@@ -20,7 +20,7 @@ export default class Clients extends Component {
       document.getElementById("Clients").scrollIntoView({ behavior: "smooth", block: 'center'  });
     }
     function scrollTextTeam() {
-      document.getElementById("Team").scrollIntoView({ behavior: "smooth", block: 'center'  });
+      document.getElementById("team").scrollIntoView({ behavior: "smooth", block: 'center'  });
     }
     function scrollTextContactUs() {
       document.getElementById("Contact").scrollIntoView({ behavior: "smooth", block: 'center'  });
