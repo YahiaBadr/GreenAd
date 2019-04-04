@@ -4,6 +4,18 @@ import "../Css/NavBarMob.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Button from "@material-ui/core/Button";
 export default class Clients extends Component {
+  state = {
+    currentScrollHeight: 0
+  };
+  componentDidMount () {     
+    window.onscroll =()=>{
+     const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
+     if (this.state.currentScrollHeight !== newScrollHeight)
+     {
+         this.setState({currentScrollHeight: newScrollHeight})
+     }
+   }
+ }
   render() {
     function scrollTextHome() {
       var scrollTo=document.getElementById("Home").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
@@ -29,11 +41,11 @@ export default class Clients extends Component {
       var scrollTo=document.getElementById("Contact").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
       window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
     }
-    // const { classes } = this.props;
+    const opacity = Math.min(100 / this.state.currentScrollHeight  , 1)
     return (
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
-      <div className="Header" id="Header">
+      <div className="Header" id="Header" style={{opacity}}>
         <nav class="navbar navbar-expand-lg navbar-dark bg-">
         <button 
         // class="navbar-brand"
