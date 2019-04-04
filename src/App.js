@@ -47,17 +47,15 @@ export default class App extends Component {
             <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
               <Clients />
             </ScrollAnimation>
-            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
-              <ContactUs />
-            </ScrollAnimation>
             <Padd />
             <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
               <MemberList2 />
             </ScrollAnimation>
-            <ScrollAnimation animateIn="zoomIn" animateOnce="true" delay="100" >
+            <ScrollAnimation animateIn="fadeInUp" animateOnce="true" delay="100" >
               <AboutUs />
             </ScrollAnimation>
             <Padd/>
+            <ContactUs />
             <MapContainer/>
             <Footer />
             

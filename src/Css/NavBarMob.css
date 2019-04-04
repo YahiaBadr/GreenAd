@@ -11,6 +11,7 @@
   /* background: url('https://hmp.me/cjdi') no-repeat center; */
   /* background-size: 100% 100%; */
   width: 150px;
+  height: 100%;
   /* min-width: 90px; */
   /* height: 40px; */
   color: rgb(255, 0, 0);
@@ -21,7 +22,8 @@
   /* padding: 8px 8px 8px 32px; */
 }
 #GreenAd { 
-	width: 100%;
+  width: auto;
+  height: 100%;
 	}
 button {
   background: none;
@@ -31,7 +33,7 @@ button {
   outline: none;
   transition: all 0.5s;
   cursor: pointer;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 button:focus 
@@ -41,6 +43,7 @@ button:focus
 .navbar { 
   z-index: 10;
   background-color:black;
+  height: 10vh;
   /* max-ght: 50px; */
   /* background: url(http://sfwallpaper.com/images/solid-red-wallpaper-13.jpg); */
   /* background: transparent; */

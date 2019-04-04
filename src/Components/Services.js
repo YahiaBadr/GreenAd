@@ -5,11 +5,12 @@ export default class Services extends Component {
   render() {
     return (
       <div id="Services" className="Services" >
-       <h1 className="Services_Header">Our Services</h1>
+       <h1 className="Services_Header">What We Do</h1>
        <br/>
-       <div className="Head1">Ideas could be impressive, they live everywhere at every moment.</div>
-       <br/>
-       <div className="Head2">How would they be brought to life? Simply, this is what we do for a living…</div>
+       <div className="Head1">There is a sweet spot in digital marketing: the place where logic meets magic. 
+        When right and left brain are working together in just the right balance you can achieve outcomes that are really extraordinary. 
+        Outcomes that will not only help you perform,
+        but outperform your own expectations, the competition, and the market.</div>
        <br/>
       </div>
     );

@@ -30,7 +30,7 @@ export default class Clients extends Component {
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
       <div className="Header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
         <button 
         // class="navbar-brand"
           class="Logo"
@@ -38,7 +38,7 @@ export default class Clients extends Component {
           data-target=".navbar-collapse.show"
           onClick={scrollTextHome}
         >
-        <img id="GreenAd" src="https://hmp.me/cjdi" width="30%"/>
+        <img id="GreenAd" src="http://i.hmp.me/m/96a2deb459a5c4e5842776f1573683c3.png"/>
         </button>
           <button
             class="navbar-toggler"
