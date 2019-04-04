@@ -41,10 +41,10 @@ export default class Clients extends Component {
       var scrollTo=document.getElementById("Contact").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
       window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
     }
-    const opacity = 1-Math.min(100 / this.state.currentScrollHeight  , 1)
+    const opacity = 1-Math.min(10 / this.state.currentScrollHeight  , 1)
     const styles = {
     content: {
-      backgroundColor: 'rgba(0, 0, 0,'+ opacity +')',
+      backgroundColor: 'rgba(255, 255, 255,'+ opacity +')',
     }
   }
     return (

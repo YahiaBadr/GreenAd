@@ -33,7 +33,7 @@ button {
   outline: none;
   transition: all 0.5s;
   cursor: pointer;
-  color: white;
+  color: goldenrod;
   font-weight: bold;
 }
 button:hover{
