@@ -7,7 +7,7 @@
 }
 .Clients img
 {
-  padding: 0;
+  padding: 1%;
   margin: 0;
   width: 15%;
   height:10%;
@@ -16,4 +16,10 @@
 #myDiv {
   display: none;
   text-align: center;
+}
+hr
+{
+  width:25%;
+  size: 5px;
+  border-top: 2px solid rgba(0,0,0,0.3)
 }

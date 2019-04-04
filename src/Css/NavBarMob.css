@@ -8,18 +8,12 @@
 }
 .Logo
 {
-  /* background: url('https://hmp.me/cjdi') no-repeat center; */
-  /* background-size: 100% 100%; */
   width: 150px;
   height: 100%;
-  /* min-width: 90px; */
-  /* height: 40px; */
   color: rgb(255, 0, 0);
   font-weight: bold;
   font-size: 20px;
   background-size: cover;
-  /* padding: 0; */
-  /* padding: 8px 8px 8px 32px; */
 }
 #GreenAd { 
   width: auto;
@@ -44,13 +38,9 @@ button:focus
   z-index: 10;
   background-color:black;
   height: 10vh;
-  /* max-ght: 50px; */
-  /* background: url(http://sfwallpaper.com/images/solid-red-wallpaper-13.jpg); */
-  /* background: transparent; */
 }
 .navbar-toggler-icon
 {
-  /* width:26px; */
   height: 35px;
 }
 
@@ -58,16 +48,4 @@ button.navbar-toggler
 {
   max-height: 35px;
   outline:0;border-width:0
-} 
-/* .MuiButton-label-2
-{
-  background: none;
-  cursor:unset;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-} */
+}
