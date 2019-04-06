@@ -64,7 +64,7 @@ button.navbar-toggler
   max-height: 35px;
   outline:0;border-width:0;
 } 
-/* .MuiButton-label-2
+.MuiButton-label-2
 {
   background: none;
   cursor:unset;
@@ -73,9 +73,13 @@ button.navbar-toggler
   outline: none;
   transition: all 0.5s;
   cursor: pointer;
-  color: white;
+  color:goldenrod;
   font-weight: bold;
-} */
+}
+.MuiButton-label-2:hover
+{
+  color:red
+}
 
 
 

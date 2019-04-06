@@ -4,10 +4,17 @@ import "../Css/NavBarMob.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Button from "@material-ui/core/Button";
 export default class Clients extends Component {
-  state = {
-    currentScrollHeight: 0
+  constructor (props){
+    super(props)
+  this.state = {
+    currentScrollHeight: 0,
+    headerHeight: 0
+    
   };
-  componentDidMount () {     
+}
+  componentDidMount () {  
+    
+    // this.setState({headerHeight: document.getElementById("Header").getClientRects()[0].height}) 
     window.onscroll =()=>{
      const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
      if (this.state.currentScrollHeight !== newScrollHeight)
@@ -15,57 +22,70 @@ export default class Clients extends Component {
          this.setState({currentScrollHeight: newScrollHeight})
      }
     }
-    // Button.disableRipple = true;
-    // Button.disableFocusRipple = true;
-    
- }
-  render() {
-    function scrollTextHome() {
-      var scrollTo=document.getElementById("Home").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
-    function scrollTextAboutUs() {
-      var scrollTo=document.getElementById("AboutUs").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
-    function scrollTextServices() {
-      var scrollTo=document.getElementById("Services").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
-    async function scrollTextClients() {
-      var scrollTo=document.getElementById("Clients").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
-    function scrollTextTeam() {
-      var scrollTo=document.getElementById("team").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
-    function scrollTextContactUs() {
-      var scrollTo=document.getElementById("Contact").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
+    setTimeout(()=>{
+      console.log(document.getElementById("Header").clientHeight)
+      this.setState({headerHeight:document.getElementById("Header").clientHeight})
+      console.log(this.state.headerHeight)
+    },2)
+  }
+  scrollTextAboutUs= () => {
+    var scrollTo=document.getElementById("AboutUs").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextHome = () => {
+    var scrollTo=document.getElementById("Home").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextServices=()=> {
+    var scrollTo=document.getElementById("Services").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextClients=()=> {
+    var scrollTo=document.getElementById("Clients").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextTeam=()=> {
+    var scrollTo=document.getElementById("team").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextContactUs = ()=> {
+    var scrollTo=document.getElementById("Contact").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  render() { 
     const opacity = 1-Math.min(10 / this.state.currentScrollHeight  , 1)
     const styles = {
     content: {
       backgroundColor: 'rgba(255, 255, 255,'+ opacity +')',
+      }
     }
-  }
+    // window.addEventListener('scroll', () => {
+    //   var y=window.scrollY;
+    //   // console.log(y)
+    //   var home = document.getElementById("Home").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
+    //   var clients = document.getElementById("Clients").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
+    //   if(y === clients)
+    //   {
+    //     // document.getElementById("buttonClients").
+    //   }
+    // })
     return (
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
-      <div className="Header" id="Header" style={styles.content}>
-        <nav class="navbar navbar-expand-lg navbar-light bg-">
+      <div className="Header" id="Header" style={styles.content} ref="Header">
+        <nav className="navbar navbar-expand-lg navbar-light bg-" id="navbarmob">
         <button 
-        // class="navbar-brand"
-          class="Logo"
+        // className="navbar-brand"
+          className="Logo"
+          id="buttonLogo"
           data-toggle="collapse"
           data-target=".navbar-collapse.show"
-          onClick={scrollTextHome}
+          onClick={this.scrollTextHome}
         >
         <img id="GreenAd" src="http://i.hmp.me/m/96a2deb459a5c4e5842776f1573683c3.png" alt="Green_Ad_Logo"/>
         </button>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -73,75 +93,77 @@ export default class Clients extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon" />
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item ml-auto active">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item ml-auto active">
                 <Button
-                  // class="nav-link ml-auto"
-                  class = "button"
+                  // className="nav-link ml-auto"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextHome}
+                  onClick={this.scrollTextHome}
                   disableRipple = {true}
                 >
-                  Home <span class="sr-only">(current)</span>
+                  Home 
                 </Button>
               </li>
-              <li class="nav-item ml-auto">
+              <li className="nav-item ml-auto">
                 <Button
-                  class="button"
+                  className="button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextServices}
+                  onClick={this.scrollTextServices}
                   disableRipple = {true}
                 >
                   Services
                 </Button>
               </li>
-              <li class="nav-item ml-auto">
+              <li className="nav-item ml-auto">
                 <Button
-                  class = "button"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextClients}
+                  onClick={this.scrollTextClients}
                   disableRipple = {true}
+                  id="buttonClients"
                 >
                   Clients
                 </Button>
               </li>
-              <li class="nav-item ml-auto">
+              <li className="nav-item ml-auto">
                 <Button
-                  class = "button"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextTeam}
+                  onClick={this.scrollTextTeam}
                   disableRipple = {true}
                 >
                   Team
                 </Button>
               </li>
-              <li class="nav-item ml-auto">
+              <li className="nav-item ml-auto">
                 <Button
-                  class = "button"
+                  id="buttonAboutUs"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextAboutUs}
+                  onClick={this.scrollTextAboutUs}
                   disableRipple = {true}
                 >
-                  AboutUS
+                  About Us
                 </Button>
               </li>
-              <li class="nav-item ml-auto">
+              <li className="nav-item ml-auto">
                 <Button
-                  class = "button"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextContactUs}
+                  onClick={this.scrollTextContactUs}
                   disableRipple = {true}
                 >
-                  ContactUS
+                  Contact Us
                 </Button>
               </li>
             </ul>

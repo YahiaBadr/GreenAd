@@ -17,6 +17,8 @@ import MapContainer from "./Components/MapContainer";
 import CarouselUS from './Components/CarouselUs';
 
 export default class App extends Component {
+  
+  
   render() {
     function showPage() {
       document.getElementById("loader").style.display = "none";
@@ -29,7 +31,6 @@ export default class App extends Component {
           <div id="loader" />
             
           <div id="myDiv">
-
             <NavBarMob />
             <ControlledCarousel />
 
