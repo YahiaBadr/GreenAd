@@ -62,6 +62,7 @@ export default class Clients extends Component {
     window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
   }
   render() { 
+
     const opacity = 1-Math.min(10 / this.state.currentScrollHeight  , 1)
     const styles = {
     content: {
@@ -75,13 +76,13 @@ export default class Clients extends Component {
       var team = document.getElementById("Team").getClientRects()[0].y-this.state.headerHeight
       var aboutus = document.getElementById("AboutUs").getClientRects()[0].y-this.state.headerHeight
       var contactus = document.getElementById("Contact").getClientRects()[0].y-this.state.headerHeight
-      
-      document.getElementById("buttonHome").style.color="goldenrod"
-      document.getElementById("buttonServices").style.color="goldenrod"
-      document.getElementById("buttonClients").style.color="goldenrod"
-      document.getElementById("buttonTeam").style.color="goldenrod"
-      document.getElementById("buttonAboutUs").style.color="goldenrod"
-      document.getElementById("buttonContactUs").style.color="goldenrod"
+      document.getElementById("buttonHome").style = styles.button
+      // document.getElementById("buttonHome").style.color="goldenrod"
+      document.getElementById("buttonServices").style = styles.button
+      document.getElementById("buttonClients").style = styles.button
+      document.getElementById("buttonTeam").style = styles.button
+      document.getElementById("buttonAboutUs").style = styles.button
+      document.getElementById("buttonContactUs").style = styles.button
       const offset = (this.state.screenHeight-this.state.headerHeight)/2;
       if(0 > home+this.state.headerHeight && offset < services)
       {
@@ -146,7 +147,8 @@ export default class Clients extends Component {
                   onClick={this.scrollTextHome}
                   // disableRipple = {true}
                 >
-                <span>  HOME</span> 
+                  HOME
+                {/* <span>  HOME</span>  */}
                 </button>
               </li>
               <li className="nav-item ml-auto">
@@ -159,6 +161,7 @@ export default class Clients extends Component {
                   // disableRipple = {true}
                 >
                   SERVICES
+                  {/* <span>SERVICES</span> */}
                 </button>
               </li>
               <li className="nav-item ml-auto">
@@ -171,6 +174,7 @@ export default class Clients extends Component {
                   // disableRipple = {true}
                 >
                   CLIENTS
+                  {/* <span>CLIENTS</span> */}
                 </button>
               </li>
               <li className="nav-item ml-auto">
@@ -183,6 +187,7 @@ export default class Clients extends Component {
                   // disableRipple = {true}
                 >
                   TEAM
+                  {/* <span>TEAM</span> */}
                 </button>
               </li>
               <li className="nav-item ml-auto">
@@ -195,6 +200,7 @@ export default class Clients extends Component {
                   // disableRipple = {true}
                 >
                   ABOUT US
+                  {/* <span>ABOUT US</span> */}
                 </button>
               </li>
               <li className="nav-item ml-auto">
@@ -207,6 +213,7 @@ export default class Clients extends Component {
                   // disableRipple = {true}
                 >
                   CONTACT US
+                  {/* <span>CONTACT US</span> */}
                 </button>
               </li>
             </ul>

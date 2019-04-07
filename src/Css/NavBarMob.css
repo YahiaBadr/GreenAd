@@ -82,7 +82,7 @@ button.navbar-toggler
   color:red
 }
 
-/* .button span {
+ .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -96,13 +96,15 @@ button.navbar-toggler
   top: 0;
   right: -20px;
   transition: 0.5s;
+  color:red;
 }
 
 .button:hover span {
   padding-right: 25px;
+  color:red;
 }
 
 .button:hover span:after {
   opacity: 1;
   right: 0; 
-}*/
+}
