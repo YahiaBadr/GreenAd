@@ -70,26 +70,6 @@ button.navbar-toggler
   outline:0;border-width:0;
 } 
 
-/* button:after {
-  content: '\00bb';
-  position: relative;
-  opacity: 0; 
-  top:0; 
-  right: -20px;
-  transition: 0.5s;
-  color: red;
-}
-
-button:hover{
-  padding-right: 25px;
-  color: red;
-}
-
-button:hover:after {
-  opacity: 1;
-  right: 0;
-} */
-
 .button span {
   cursor: pointer;
   display: inline-block;
