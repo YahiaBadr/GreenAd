@@ -103,12 +103,10 @@ export default class Clients extends Component {
       if(offset >= aboutus && offset < contactus)
       {
         document.getElementById("buttonAboutUs").style.color="red"
-        console.log("aboutus")
       }
       if(offset >= contactus && contactus >= this.state.screenHeight/-3.6)
       {
         document.getElementById("buttonContactUs").style.color="red"
-        console.log("here")
       }
     })
     return (
@@ -124,9 +122,10 @@ export default class Clients extends Component {
           data-target=".navbar-collapse.show"
           onClick={this.scrollTextHome}
         >
-        <img id="GreenAd" src="http://i.hmp.me/m/96a2deb459a5c4e5842776f1573683c3.png" alt="Green_Ad_Logo"/>
+        {/* <img id="GreenAd" src="http://i.hmp.me/m/96a2deb459a5c4e5842776f1573683c3.png" alt="Green_Ad_Logo"/> */}
         </button>
           <button
+            // className="burguerLogo"
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -135,11 +134,11 @@ export default class Clients extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon" />
+            {/* <img id="burguerIcon" src="http://www.bigmikebailbonds.com/cms/wp-content/themes/bail%20bonds%20v2.0/images/hamburger-menu-button.png" alt="Green_Ad_Logo"/> */}
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item ml-auto active">
+              <li className="nav-item mr-auto">
                 <button
                   // className="nav-link ml-auto"
                   className = "button"
@@ -151,7 +150,7 @@ export default class Clients extends Component {
                 <span id="buttonHome">HOME</span> 
                 </button>
               </li>
-              <li className="nav-item ml-auto">
+              <li className="nav-item mr-auto">
                 <button
                   className="button"
                   data-toggle="collapse"
@@ -162,7 +161,7 @@ export default class Clients extends Component {
                   <span id="buttonServices">SERVICES</span>
                 </button>
               </li>
-              <li className="nav-item ml-auto">
+              <li className="nav-item mr-auto">
                 <button
                   className = "button"
                   data-toggle="collapse"
@@ -173,7 +172,7 @@ export default class Clients extends Component {
                   <span id="buttonClients">CLIENTS</span>
                 </button>
               </li>
-              <li className="nav-item ml-auto">
+              <li className="nav-item mr-auto">
                 <button
                   className = "button"
                   data-toggle="collapse"
@@ -184,7 +183,7 @@ export default class Clients extends Component {
                   <span id="buttonTeam">TEAM</span>
                 </button>
               </li>
-              <li className="nav-item ml-auto">
+              <li className="nav-item mr-auto">
                 <button
                   className = "button"
                   data-toggle="collapse"
@@ -195,7 +194,7 @@ export default class Clients extends Component {
                   <span id="buttonAboutUs">ABOUT US</span>
                 </button>
               </li>
-              <li className="nav-item ml-auto">
+              <li className="nav-item mr-auto">
                 <button
                   className = "button"
                   data-toggle="collapse"
