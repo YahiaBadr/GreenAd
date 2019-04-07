@@ -28,18 +28,22 @@
 button {
   background: none;
   cursor:unset;
+  transition: all 0.5s;
   border: none;
   font-size: 16px;
   outline: none;
-  transition: all 0.5s;
   cursor: pointer;
   color: rgb(218, 165, 32);
   font-weight: bold;
   margin-top: 5px;
+  /* display: inline-block; */
+  /* cursor: pointer; */
+  /* position: relative; */
+  /* transition: 0.5s; */
 }
-button:hover{
+/* button:hover{
   color:red
-}
+} */
 button:focus 
 {
   outline:0;
@@ -65,24 +69,28 @@ button.navbar-toggler
   max-height: 35px;
   outline:0;border-width:0;
 } 
-.MuiButton-label-2
-{
-  background: none;
-  cursor:unset;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  color:goldenrod;
-  font-weight: bold;
-}
-.MuiButton-label-2:hover
-{
-  color:red
+
+/* button:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0; 
+  top:0; 
+  right: -20px;
+  transition: 0.5s;
+  color: red;
 }
 
- .button span {
+button:hover{
+  padding-right: 25px;
+  color: red;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 0;
+} */
+
+.button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -96,15 +104,15 @@ button.navbar-toggler
   top: 0;
   right: -20px;
   transition: 0.5s;
-  color:red;
+  color: red
 }
 
 .button:hover span {
   padding-right: 25px;
-  color:red;
+  color: red
 }
 
 .button:hover span:after {
   opacity: 1;
-  right: 0; 
+  right: 0;
 }

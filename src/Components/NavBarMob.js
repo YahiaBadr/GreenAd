@@ -103,10 +103,12 @@ export default class Clients extends Component {
       if(offset >= aboutus && offset < contactus)
       {
         document.getElementById("buttonAboutUs").style.color="red"
+        console.log("aboutus")
       }
       if(offset >= contactus && contactus >= this.state.screenHeight/-3.6)
       {
         document.getElementById("buttonContactUs").style.color="red"
+        console.log("here")
       }
     })
     return (
@@ -140,80 +142,68 @@ export default class Clients extends Component {
               <li className="nav-item ml-auto active">
                 <button
                   // className="nav-link ml-auto"
-                  id="buttonHome"
                   className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={this.scrollTextHome}
                   // disableRipple = {true}
                 >
-                  HOME
-                {/* <span>  HOME</span>  */}
+                <span id="buttonHome">HOME</span> 
                 </button>
               </li>
               <li className="nav-item ml-auto">
                 <button
-                  id="buttonServices"
                   className="button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={this.scrollTextServices}
                   // disableRipple = {true}
                 >
-                  SERVICES
-                  {/* <span>SERVICES</span> */}
+                  <span id="buttonServices">SERVICES</span>
                 </button>
               </li>
               <li className="nav-item ml-auto">
                 <button
-                  id="buttonClients"
                   className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={this.scrollTextClients}
                   // disableRipple = {true}
                 >
-                  CLIENTS
-                  {/* <span>CLIENTS</span> */}
+                  <span id="buttonClients">CLIENTS</span>
                 </button>
               </li>
               <li className="nav-item ml-auto">
                 <button
-                  id="buttonTeam"
                   className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={this.scrollTextTeam}
                   // disableRipple = {true}
                 >
-                  TEAM
-                  {/* <span>TEAM</span> */}
+                  <span id="buttonTeam">TEAM</span>
                 </button>
               </li>
               <li className="nav-item ml-auto">
                 <button
-                  id="buttonAboutUs"
                   className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={this.scrollTextAboutUs}
                   // disableRipple = {true}
                 >
-                  ABOUT US
-                  {/* <span>ABOUT US</span> */}
+                  <span id="buttonAboutUs">ABOUT US</span>
                 </button>
               </li>
               <li className="nav-item ml-auto">
                 <button
-                  id="buttonContactUs"
                   className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                   onClick={this.scrollTextContactUs}
                   // disableRipple = {true}
                 >
-                  CONTACT US
-                  {/* <span>CONTACT US</span> */}
+                  <span id="buttonContactUs">CONTACT US</span>
                 </button>
               </li>
             </ul>
