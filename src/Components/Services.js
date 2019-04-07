@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../Css/Services.css";
-
+import CarouselUS from '../Components/CarouselUs';
 export default class Services extends Component {
   render() {
     return (
@@ -12,6 +12,7 @@ export default class Services extends Component {
         Outcomes that will not only help you perform,
         but outperform your own expectations, the competition, and the market.</div>
        <br/>
+       <CarouselUS/>
       </div>
     );
   }
