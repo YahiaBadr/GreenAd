@@ -45,8 +45,9 @@ export default class ControlledCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="http://i.imgur.com/QWGYHQh.jpg"
-              alt="Third slide"
+              // src="https://hmp.me/cjht"
+              src="https://hmp.me/cjhu"
+              alt="Second slide"
             />
             <Carousel.Caption>
               <h3>Second slide label</h3>

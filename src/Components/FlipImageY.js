@@ -8,14 +8,14 @@ export default class FlipImageX extends Component{
         // const classes = this.props; 
         return(
         <div className="bodyY">
-            <div class="cardY">
+            <div className="cardY">
 
               <div className="frontY">
               <img className="myImage"  src={this.props.imageSrc} alt="W3Schools.com"/>
               {/* <img src="https://hmp.me/cjbf" alt="yaya"/> */}
               </div>
               <div className="backY">
-                    <div class="detailsY">
+                    <div className="detailsY">
                         <h2 className="textY">Ahmed Mohamed<br/><span>Web developer</span></h2>
                         
                     </div>

@@ -7,37 +7,39 @@
   margin: 0 auto;
 
 }
-.Logo
+.Logo /* for the logo button which holds the logo image */
 {
-  width: 150px;
-
-  height: 5vh;
+  /* align-self: left; */
+  width: 14vh;
+  /* height: auto; */
+  min-height: 40px;
   top:0;
-  /* min-width: 90px; */
-  /* height: 40px; */
-
-  color: rgb(255, 0, 0);
-  font-weight: bold;
-  font-size: 20px;
-  background-size: cover;
+  padding-right:60px;
+  /* border: 2px solid black; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(http://i.hmp.me/m/96a2deb459a5c4e5842776f1573683c3.png)
+  /* background-image: url(https://hmp.me/cji5) */ /* other logo */
+}
+/* #burguerIcon{
+  width: auto;
+  height: 100%;
 }
 #GreenAd { 
   width: auto;
   height: 100%;
-	}
+	} */
 button {
   background: none;
   cursor:unset;
+  transition: all 0.5s;
   border: none;
   font-size: 16px;
   outline: none;
-  transition: all 0.5s;
   cursor: pointer;
   color: rgb(218, 165, 32);
   font-weight: bold;
-}
-button:hover{
-  color:red
+  margin-top: 5px;
 }
 button:focus 
 {
@@ -59,24 +61,43 @@ button:focus
   height: 35px;
 }
 
-button.navbar-toggler
+button.navbar-toggler /* for the hamburger button */
 {
-  max-height: 35px;
+  /* max-height: 35px; */
   outline:0;border-width:0;
+
+  /* border: 2px solid black; */
+  /* position: absolute; */
+  /* padding-right:10vw; */
+  width: 6vh;
+  height: 6vh;
+  background-size: cover;
+  background-image: url(http://www.bigmikebailbonds.com/cms/wp-content/themes/bail%20bonds%20v2.0/images/hamburger-menu-button.png)
 } 
-/* .MuiButton-label-2
-{
-  background: none;
-  cursor:unset;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  transition: all 0.5s;
+
+.button span {
   cursor: pointer;
-  color: white;
-  font-weight: bold;
-} */
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: red
+}
 
+.button:hover span {
+  padding-right: 25px;
+  color: red
+}
 
-
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

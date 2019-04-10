@@ -2,70 +2,131 @@ import React, { Component } from "react";
 import "../App.css";
 import "../Css/NavBarMob.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 export default class Clients extends Component {
-  state = {
-    currentScrollHeight: 0
+  constructor (props){
+    super(props)
+  this.state = {
+    currentScrollHeight: 0,
+    headerHeight: 0,
+    screenHeight:0,
+    screenWidth:0
   };
-  componentDidMount () {     
-    window.onscroll =()=>{
-     const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
-     if (this.state.currentScrollHeight !== newScrollHeight)
-     {
-         this.setState({currentScrollHeight: newScrollHeight})
-     }
-    }
-    // Button.disableRipple = true;
-    // Button.disableFocusRipple = true;
+  this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+}
+  componentDidMount () {  
     
- }
-  render() {
-    function scrollTextHome() {
-      var scrollTo=document.getElementById("Home").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+    window.onscroll =()=>{
+      const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
+      if (this.state.currentScrollHeight !== newScrollHeight){
+          this.setState({currentScrollHeight: newScrollHeight})
+      }
     }
-    function scrollTextAboutUs() {
-      var scrollTo=document.getElementById("AboutUs").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
-    function scrollTextServices() {
-      var scrollTo=document.getElementById("Services").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
-    async function scrollTextClients() {
-      var scrollTo=document.getElementById("Clients").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
-    function scrollTextTeam() {
-      var scrollTo=document.getElementById("team").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
-    function scrollTextContactUs() {
-      var scrollTo=document.getElementById("Contact").getClientRects()[0].y-document.getElementById("Header").getClientRects()[0].height
-      window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
-    }
+    setTimeout(()=>{
+      this.setState({headerHeight:document.getElementById("Header").clientHeight})
+    },100)// it will wait 100ms
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ screenWidth: window.innerWidth, screenHeight: window.innerHeight });
+  }
+
+  scrollTextAboutUs= () => {
+    var scrollTo=document.getElementById("AboutUs").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextHome = () => {
+    var scrollTo=document.getElementById("Home").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextServices=()=> {
+    var scrollTo=document.getElementById("Services").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextClients=()=> {
+    var scrollTo=document.getElementById("Clients").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextTeam=()=> {
+    var scrollTo=document.getElementById("Team").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  scrollTextContactUs = ()=> {
+    var scrollTo=document.getElementById("Contact").getClientRects()[0].y-this.state.headerHeight
+    window.scrollBy({top: scrollTo, left: 0, behavior: 'smooth'})
+  }
+  render() { 
+
     const opacity = 1-Math.min(10 / this.state.currentScrollHeight  , 1)
     const styles = {
     content: {
       backgroundColor: 'rgba(255, 255, 255,'+ opacity +')',
+      }
     }
-  }
+    window.addEventListener('scroll', () => {
+      var home = document.getElementById("Home").getClientRects()[0].y-this.state.headerHeight
+      var services = document.getElementById("Services").getClientRects()[0].y-this.state.headerHeight
+      var clients = document.getElementById("Clients").getClientRects()[0].y-this.state.headerHeight
+      var team = document.getElementById("Team").getClientRects()[0].y-this.state.headerHeight
+      var aboutus = document.getElementById("AboutUs").getClientRects()[0].y-this.state.headerHeight
+      var contactus = document.getElementById("Contact").getClientRects()[0].y-this.state.headerHeight
+      document.getElementById("buttonHome").style = styles.button
+      // document.getElementById("buttonHome").style.color="goldenrod"
+      document.getElementById("buttonServices").style = styles.button
+      document.getElementById("buttonClients").style = styles.button
+      document.getElementById("buttonTeam").style = styles.button
+      document.getElementById("buttonAboutUs").style = styles.button
+      document.getElementById("buttonContactUs").style = styles.button
+      const offset = (this.state.screenHeight-this.state.headerHeight)/2;
+      if(0 > home+this.state.headerHeight && offset < services)
+      {
+        document.getElementById("buttonHome").style.color="red"
+      }
+      if(offset >= services && offset < clients)
+      {
+        document.getElementById("buttonServices").style.color="red"
+      }
+      if(offset >= clients && offset < team)
+      {
+        document.getElementById("buttonClients").style.color="red"
+      }
+      if(offset >= team && offset < aboutus)
+      {
+        document.getElementById("buttonTeam").style.color="red"
+      }
+      if(offset >= aboutus && offset < contactus)
+      {
+        document.getElementById("buttonAboutUs").style.color="red"
+      }
+      if(offset >= contactus && contactus >= this.state.screenHeight/-3.6)
+      {
+        document.getElementById("buttonContactUs").style.color="red"
+      }
+    })
     return (
       //navbar navbar-default navbar-alt
       //navbar navbar-expand-lg navbar-dark bg-dark
-      <div className="Header" id="Header" style={styles.content}>
-        <nav class="navbar navbar-expand-lg navbar-light bg-">
+      <div className="Header" id="Header" style={styles.content} ref="Header">
+        <nav className="navbar navbar-expand-lg navbar-light bg-" id="navbarmob">
         <button 
-        // class="navbar-brand"
-          class="Logo"
+        // className="navbar-brand"
+          className="Logo"
+          id="buttonLogo"
           data-toggle="collapse"
           data-target=".navbar-collapse.show"
-          onClick={scrollTextHome}
+          onClick={this.scrollTextHome}
         >
-        <img id="GreenAd" src="http://i.hmp.me/m/96a2deb459a5c4e5842776f1573683c3.png" alt="Green_Ad_Logo"/>
+        {/* <img id="GreenAd" src="http://i.hmp.me/m/96a2deb459a5c4e5842776f1573683c3.png" alt="Green_Ad_Logo"/> */}
         </button>
           <button
-            class="navbar-toggler"
+            // className="burguerLogo"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -73,76 +134,76 @@ export default class Clients extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon" />
+            {/* <img id="burguerIcon" src="http://www.bigmikebailbonds.com/cms/wp-content/themes/bail%20bonds%20v2.0/images/hamburger-menu-button.png" alt="Green_Ad_Logo"/> */}
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item ml-auto active">
-                <Button
-                  // class="nav-link ml-auto"
-                  class = "button"
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item mr-auto">
+                <button
+                  // className="nav-link ml-auto"
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextHome}
-                  disableRipple = {true}
+                  onClick={this.scrollTextHome}
+                  // disableRipple = {true}
                 >
-                  Home <span class="sr-only">(current)</span>
-                </Button>
+                <span id="buttonHome">HOME</span> 
+                </button>
               </li>
-              <li class="nav-item ml-auto">
-                <Button
-                  class="button"
+              <li className="nav-item mr-auto">
+                <button
+                  className="button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextServices}
-                  disableRipple = {true}
+                  onClick={this.scrollTextServices}
+                  // disableRipple = {true}
                 >
-                  Services
-                </Button>
+                  <span id="buttonServices">SERVICES</span>
+                </button>
               </li>
-              <li class="nav-item ml-auto">
-                <Button
-                  class = "button"
+              <li className="nav-item mr-auto">
+                <button
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextClients}
-                  disableRipple = {true}
+                  onClick={this.scrollTextClients}
+                  // disableRipple = {true}
                 >
-                  Clients
-                </Button>
+                  <span id="buttonClients">CLIENTS</span>
+                </button>
               </li>
-              <li class="nav-item ml-auto">
-                <Button
-                  class = "button"
+              <li className="nav-item mr-auto">
+                <button
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextTeam}
-                  disableRipple = {true}
+                  onClick={this.scrollTextTeam}
+                  // disableRipple = {true}
                 >
-                  Team
-                </Button>
+                  <span id="buttonTeam">TEAM</span>
+                </button>
               </li>
-              <li class="nav-item ml-auto">
-                <Button
-                  class = "button"
+              <li className="nav-item mr-auto">
+                <button
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextAboutUs}
-                  disableRipple = {true}
+                  onClick={this.scrollTextAboutUs}
+                  // disableRipple = {true}
                 >
-                  AboutUS
-                </Button>
+                  <span id="buttonAboutUs">ABOUT US</span>
+                </button>
               </li>
-              <li class="nav-item ml-auto">
-                <Button
-                  class = "button"
+              <li className="nav-item mr-auto">
+                <button
+                  className = "button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={scrollTextContactUs}
-                  disableRipple = {true}
+                  onClick={this.scrollTextContactUs}
+                  // disableRipple = {true}
                 >
-                  ContactUS
-                </Button>
+                  <span id="buttonContactUs">CONTACT US</span>
+                </button>
               </li>
             </ul>
           </div>
