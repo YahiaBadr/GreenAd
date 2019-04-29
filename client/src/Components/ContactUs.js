@@ -29,7 +29,8 @@ export default class ContactUs extends Component {
         subject: this.state.subject,
         text: text  
       }
-      const res = await axios.post("http://localhost:5000/sendMail",body);
+      const res = await axios.post("https://green-ad-agency.firebaseapp.com/api/sendMail",body);
+      // const res = await axios.post("http://localhost:5000/api/sendMail",body);
       this.inputEmail.value="";
       this.inputName.value="";
       this.inputSubject.value="";

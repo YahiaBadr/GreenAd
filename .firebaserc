@@ -1,5 +1,6 @@
 {
   "projects": {
-    "staging": "green-ad-agency"
+    "staging": "green-ad-agency",
+    "default": "green-ad-agency"
   }
 }

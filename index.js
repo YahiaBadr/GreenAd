@@ -1,10 +1,12 @@
 // Import express
 const express = require('express')
+const functions = require('firebase-functions')
 const nodemailer = require("nodemailer");
 const cors = require('cors');
 // Create the app
 const app = express()
 const sendMail = require('./mail')
+exports.api = functions.https.onRequest(app)
 // Use it with post
 app.use(express.json())
 app.use(cors());
@@ -13,7 +15,7 @@ app.get('/', (req, res) => {
     res.send(`<h1>Welcome</h1>`)
 })
 
-app.post('/sendMail',sendMail.sendMail);
+app.post('/api/sendMail',sendMail.sendMail);
 
 // Define the port, get it from the enviroment (used in production)
 // Or just use 3000
