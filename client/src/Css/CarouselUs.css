@@ -1,0 +1,34 @@
+.Carousel
+{
+  /* padding: 20%; */
+  /* margin-left: 20%; */
+  margin: auto;
+  /* border-right: 25%; */
+  /* text-align: center; */
+  /* width:70%; */
+  /* height: 70%; */
+}
+.Carousel-inner img {
+  margin: auto;
+  /* max-height: 70px; */
+}
+.carousel .thumb img {
+  min-width: 100% !important;
+  height: 50% !important;
+  
+}
+
+/* .carousel img{
+  background: url("https://hmp.me/cjc7") no-repeat;
+} */
+.carousel .slide img {
+  max-height: 300px;  /* change this to whatever you want */
+  width: 100%;
+  /* background: red; */
+  background: url("https://hmp.me/cjc7") ;
+  background-size: 100% 100%;
+}
+/*
+.slider-item-div {
+  background: red;
+} */

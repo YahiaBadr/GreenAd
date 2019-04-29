@@ -1,0 +1,14 @@
+.Team{
+    background-image: url("https://wallpapercave.com/wp/VDGT5zT.jpg");
+    background-size: 100% 100%;
+    color:rgb(255, 230, 91);
+}
+.member{
+    display: inline-block;
+    padding: 2%;
+}
+
+
+.hr{
+    color:rgb(255, 230, 91);
+}
