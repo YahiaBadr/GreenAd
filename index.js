@@ -4,6 +4,7 @@ const cors = require('cors');
 // Create the app
 const app = express()
 const sendMail = require('./mail')
+const path = require("path");
 // Use it with post
 app.use(express.json())
 app.use(cors());
