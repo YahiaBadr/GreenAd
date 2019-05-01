@@ -10,6 +10,7 @@ exports.api = functions.https.onRequest(app)
 // Use it with post
 app.use(express.json())
 app.use(cors());
+app.use(express.static('client'))
 // Default route (entry point)
 app.get('/', (req, res) => {
     res.send(`<h1>Welcome</h1>`)
