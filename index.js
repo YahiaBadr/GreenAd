@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
     }
     catch(err){
         console.log(err)
-        app.get("/", (req, res) => res.send("Homepage"));
+        app.get("/", (req, res) => res.send(`${err}`));
     }
   } else {
     app.get("/", (req, res) => res.send("Homepage"));
