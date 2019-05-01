@@ -30,9 +30,7 @@ export default class ContactUs extends Component {
         text: text  
       }
       const link = "https://greenad-agency.herokuapp.com/api/sendMail";
-      console.log(link)
       const res = await axios.post(link,body);
-      console.log(res)
       this.inputEmail.value="";
       this.inputName.value="";
       this.inputSubject.value="";
