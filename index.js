@@ -19,6 +19,6 @@ app.post('/api/sendMail',sendMail.sendMail);
 
 // Define the port, get it from the enviroment (used in production)
 // Or just use 3000
-const port = process.env.PORT | 5000
+const port = process.env.PORT || 5000
 app.listen(port, () => console.log(`Server up and running on port ${port}`))
  
